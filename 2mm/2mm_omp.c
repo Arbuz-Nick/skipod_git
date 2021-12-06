@@ -2,6 +2,7 @@
 #include "2mm.h"
 
 double bench_t_start, bench_t_end;
+char* file_path = "./result.csv";
 
 static double rtclock() {
   struct timeval Tp;
@@ -21,6 +22,9 @@ void bench_timer_stop() {
 }
 
 void bench_timer_print() {
+  FILE* fout;
+  fout = fopen(file_path, "a+");
+  fprintf(fout, "%0.6lf;", bench_t_end - bench_t_start);
   printf("Time in seconds = %0.6lf\n", bench_t_end - bench_t_start);
 }
 
@@ -56,7 +60,7 @@ static void print_array(int ni, int nl, float D[ni][nl]) {
   int i, j;
   fprintf(stderr, "==BEGIN DUMP_ARRAYS==\n");
   fprintf(stderr, "begin dump: %s", "D");
-  for (i = 0; i < ni; i++){
+  for (i = 0; i < ni; i++) {
     fprintf(stderr, "\n");
     for (j = 0; j < nl; j++) {
       fprintf(stderr, "%0.2f ", D[i][j]);
@@ -77,28 +81,42 @@ static void kernel_2mm(int ni,
                        float B[nk][nj],
                        float C[nj][nl],
                        float D[ni][nl]) {
-  int i, j, k;
+#pragma omp parallel
+  {
+    int nthreads = omp_get_num_threads();
+    int threadid = omp_get_thread_num();
+#pragma omp master
+    {
+      FILE* fout;
+      fout = fopen(file_path, "a+");
 
-  for (i = 0; i < ni; i++)
-    for (j = 0; j < nj; j++)
-      tmp[i][j] = 0.0f;
-
-  for (i = 0; i < ni; i++)
-    for (k = 0; k < nk; ++k)
-      for (j = 0; j < nj; j++) 
-        tmp[i][j] += alpha * A[i][k] * B[k][j];
-
-  for (i = 0; i < ni; i++)
-    for (j = 0; j < nl; j++)
-      D[i][j] *= beta;
-      
-  for (i = 0; i < ni; i++)
-    for (k = 0; k < nj; ++k)
+      fprintf(fout, "%d\n", nthreads);
+    }
+    int i, j, k;
+    for (i = 0; i < ni; i++)
+      for (j = 0; j < nj; j++)
+        tmp[i][j] = 0.0f;
+#pragma omp barrier
+#pragma omp for
+    for (i = 0; i < ni; i++)
+      for (k = 0; k < nk; ++k)
+        for (j = 0; j < nj; j++)
+          tmp[i][j] += alpha * A[i][k] * B[k][j];
+#pragma omp for
+    for (i = 0; i < ni; i++)
       for (j = 0; j < nl; j++)
-        D[i][j] += tmp[i][k] * C[k][j];
+        D[i][j] *= beta;
+#pragma omp barrier
+#pragma omp for
+    for (i = 0; i < ni; i++)
+      for (k = 0; k < nj; ++k)
+        for (j = 0; j < nl; j++)
+          D[i][j] += tmp[i][k] * C[k][j];
+  }
 }
 
 int main(int argc, char** argv) {
+
   int ni = NI;
   int nj = NJ;
   int nk = NK;
@@ -119,17 +137,17 @@ int main(int argc, char** argv) {
 
   init_array(ni, nj, nk, nl, &alpha, &beta, *A, *B, *C, *D);
 
-  printf("A:\n");
+  /*printf("A:\n");
   print_array(ni, nk, *A);
-  
+
   printf("B:\n");
   print_array(nk, nj, *B);
-  
+
   printf("C:\n");
   print_array(nj, nl, *C);
-  
+
   printf("D:\n");
-  print_array(ni, nl, *D);
+  print_array(ni, nl, *D);*/
 
   bench_timer_start();
 
@@ -138,8 +156,8 @@ int main(int argc, char** argv) {
   bench_timer_stop();
   bench_timer_print();
 
-  //if (argc > 42 && !strcmp(argv[0], ""))
-  print_array(ni, nl, *D);
+  if (argc > 42 && !strcmp(argv[0], ""))
+    print_array(ni, nl, *D);
 
   free((void*)tmp);
   free((void*)A);

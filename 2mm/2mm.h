@@ -1,19 +1,19 @@
 #ifndef _2MM_H
 #define _2MM_H 
-#define MINI_DATASET 1
+//#define MINI_DATASET 1
 # if !defined(MINI_DATASET) && !defined(SMALL_DATASET) && !defined(MEDIUM_DATASET) && !defined(LARGE_DATASET) && !defined(EXTRALARGE_DATASET)
 #define LARGE_DATASET
 # endif
 # if !defined(NI) && !defined(NJ) && !defined(NK) && !defined(NL)
 # ifdef MINI_DATASET
-/*#define NI 16
+#define NI 16
 #define NJ 18
 #define NK 22
-#define NL 24*/
-#define NI 5
+#define NL 24
+/*#define NI 5
 #define NJ 6
 #define NK 7
-#define NL 8
+#define NL 8*/
 # endif
 # ifdef SMALL_DATASET
 #define NI 40
@@ -49,3 +49,4 @@
 #include <math.h>
 #include <time.h>
 #include <sys/time.h>
+#include <omp.h>

@@ -36,8 +36,8 @@ static void init_array(int ni,
                        float D[ni][nl]) {
   int i, j;
 
-  *alpha = 1.5;
-  *beta = 1.2;
+  *alpha = 1.0;
+  *beta = 1.0;
   for (i = 0; i < ni; i++)
     for (j = 0; j < nk; j++)
       A[i][j] = (float)((i * j + 1) % ni) / ni;
@@ -56,7 +56,7 @@ static void print_array(int ni, int nl, float D[ni][nl]) {
   int i, j;
   fprintf(stderr, "==BEGIN DUMP_ARRAYS==\n");
   fprintf(stderr, "begin dump: %s", "D");
-  for (i = 0; i < ni; i++){
+  for (i = 0; i < ni; i++) {
     fprintf(stderr, "\n");
     for (j = 0; j < nl; j++) {
       fprintf(stderr, "%0.2f ", D[i][j]);
@@ -80,22 +80,17 @@ static void kernel_2mm(int ni,
   int i, j, k;
 
   for (i = 0; i < ni; i++)
-    for (j = 0; j < nj; j++)
+    for (j = 0; j < nj; j++) {
       tmp[i][j] = 0.0f;
-
-  for (i = 0; i < ni; i++)
-    for (k = 0; k < nk; ++k)
-      for (j = 0; j < nj; j++) 
+      for (k = 0; k < nk; ++k)
         tmp[i][j] += alpha * A[i][k] * B[k][j];
-
+    }
   for (i = 0; i < ni; i++)
-    for (j = 0; j < nl; j++)
+    for (j = 0; j < nl; j++) {
       D[i][j] *= beta;
-      
-  for (i = 0; i < ni; i++)
-    for (k = 0; k < nj; ++k)
-      for (j = 0; j < nl; j++)
+      for (k = 0; k < nj; ++k)
         D[i][j] += tmp[i][k] * C[k][j];
+    }
 }
 
 int main(int argc, char** argv) {
@@ -119,17 +114,17 @@ int main(int argc, char** argv) {
 
   init_array(ni, nj, nk, nl, &alpha, &beta, *A, *B, *C, *D);
 
-  printf("A:\n");
+  /*printf("A:\n");
   print_array(ni, nk, *A);
-  
+
   printf("B:\n");
   print_array(nk, nj, *B);
-  
+
   printf("C:\n");
   print_array(nj, nl, *C);
-  
+
   printf("D:\n");
-  print_array(ni, nl, *D);
+  print_array(ni, nl, *D);*/
 
   bench_timer_start();
 
@@ -138,8 +133,8 @@ int main(int argc, char** argv) {
   bench_timer_stop();
   bench_timer_print();
 
-  //if (argc > 42 && !strcmp(argv[0], ""))
-  print_array(ni, nl, *D);
+  if (argc > 42 && !strcmp(argv[0], ""))
+    print_array(ni, nl, *D);
 
   free((void*)tmp);
   free((void*)A);
