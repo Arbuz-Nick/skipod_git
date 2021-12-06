@@ -36,8 +36,8 @@ static void init_array(int ni,
                        float D[ni][nl]) {
   int i, j;
 
-  *alpha = 1.5;
-  *beta = 1.2;
+  *alpha = 1.0;
+  *beta = 1.0;
   for (i = 0; i < ni; i++)
     for (j = 0; j < nk; j++)
       A[i][j] = (float)((i * j + 1) % ni) / ni;
