@@ -1,8 +1,8 @@
 /* Include benchmark-specific header. */
-#include "2mm.h"
+#include "2mm_omp.h"
 
 double bench_t_start, bench_t_end;
-char* file_path = "./result.csv";
+char* file_path;
 
 static double rtclock() {
   struct timeval Tp;
@@ -84,12 +84,11 @@ static void kernel_2mm(int ni,
 #pragma omp parallel
   {
     int nthreads = omp_get_num_threads();
-    int threadid = omp_get_thread_num();
 #pragma omp master
     {
       FILE* fout;
       fout = fopen(file_path, "a+");
-
+      printf("Nthread = %d\n", nthreads);
       fprintf(fout, "%d\n", nthreads);
     }
     int i, j, k;
@@ -116,6 +115,12 @@ static void kernel_2mm(int ni,
 }
 
 int main(int argc, char** argv) {
+
+  if (argc == 1){
+    file_path = "~/skipod/skipod_polus/2mm1/result_omp.csv";
+  } else {
+    file_path = argv[1];
+  }
 
   int ni = NI;
   int nj = NJ;

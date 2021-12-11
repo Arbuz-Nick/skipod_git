@@ -1,11 +1,17 @@
-run_omp_polus: omp
-	./2mm_omp "~/skipod/skipod_polus/2mm1/result_omp_polus.csv"
+test_mpi: mpi test_mpi
+	./test_mpi
 
-run_omp:
-	./2mm_omp
+mpi: 2mm_mpi.c 2mm_mpi.h
+	mpicc ./2mm_mpi.c 2mm_mpi.h -o 2mm_mpi
 
-omp: 2mm_omp.c 2mm.h
-	gcc 2mm_omp.c 2mm.h -o 2mm_omp -fopenmp
+test_omp_polus: omp test_omp
+	./test_omp_polus
+
+test_omp: omp 2mm_omp
+	./test_omp
+
+omp: 2mm_omp.c 2mm_omp.h
+	gcc 2mm_omp.c 2mm_omp.h -o 2mm_omp -Wall -fopenmp
 
 run_simple: simple
 	./2mm

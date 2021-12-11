@@ -1,10 +1,9 @@
 #! /bin/bash
-echo "Time;Nthreads">result_omp_polus.csv
+echo "Time;Nthreads">result_mpi.csv
 for j in 0 1 2 3 4 5 6 7 8 9
 do
 for i in 1 2 4 6 8 10 12 14 16
 do
-export OMP_NUM_THREADS=$i
-make run_omp_polus
+mpiexec -n $i ./2mm_mpi "./result_mpi.csv"
 done
 done
