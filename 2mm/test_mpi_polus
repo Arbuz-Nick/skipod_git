@@ -1,0 +1,25 @@
+#! /bin/bash
+
+echo "Time;Nthreads">result_mpi_polus.csv
+
+for (( j = 0; j <= 32; j+=4 ))
+
+do
+for (( i = 1; i <= 160: i*=2 ))
+
+do
+
+if [$i -le 8]
+then
+
+mpisubmit.pl -p $j -t $i run_omp_polus
+
+elif [$j -ge 4]
+then
+
+mpisubmit.pl -p $j -t $i run_omp_polus
+
+fi
+
+done
+done

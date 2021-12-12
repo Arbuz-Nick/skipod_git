@@ -1,3 +1,6 @@
+test_mpi_polus: mpi test_mpi_polus
+	./test_mpi_polus
+
 test_mpi: mpi test_mpi
 	./test_mpi
 
