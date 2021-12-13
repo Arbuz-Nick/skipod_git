@@ -177,11 +177,12 @@ int main(int argc, char** argv) {
     for (int i = 1; i < process_num; i++) {
       int buf[1];
       MPI_Status status;
-      MPI_Recv(&buf, 1, MPI_INT, MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_COMM_WORLD, &status);
-    } else {
-      int buf[1] = {process_id};
-      MPI_Send(&buf, 1, MPI_INT, FIRST_THREAD, 0, MPI_COMM_WORLD);
+      MPI_Recv(&buf, 1, MPI_INT, MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_COMM_WORLD,
+               &status);
     }
+  } else {
+    int buf[1] = {process_id};
+    MPI_Send(&buf, 1, MPI_INT, FIRST_THREAD, 0, MPI_COMM_WORLD);
   }
   MPI_Finalize();
 
