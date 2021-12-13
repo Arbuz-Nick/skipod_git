@@ -1,8 +1,8 @@
 #! /bin/bash
 echo "Time;Nthreads">result_mpi.csv
-for j in 0 1 2 3 4 5 6 7 8 9
+for ((j = 0; j < 10; j++))
 do
-for i in 1 2 4 6 8 10 12 14 16
+for ((i = 1; i <= 16; i++))
 do
 mpiexec -n $i ./2mm_mpi "./result_mpi.csv"
 done
