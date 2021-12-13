@@ -1,0 +1,11 @@
+#!/bin/bash
+for ((i = 0; i <= 160; i+=2))
+do
+M=$(( (( $i / 8 )) + 1 ))
+echo "#BSUB -n $M
+#BSUB -W 00:15
+#BSUB -o \"./../out_files/omp/$i.out\"
+#BSUB -e \"./../err_files/omp/$i.err\"
+#BSUB -R \"span[hosts=1]\"
+OMP_NUM_THREADS=$i ./../2mm_omp">$i.lsf
+done

@@ -2,24 +2,10 @@
 
 echo "Time;Nthreads">result_mpi_polus.csv
 
-for (( j = 0; j <= 32; j+=4 ))
-
+for (( j = 0; j < 10; j++ ))
 do
-for (( i = 1; i <= 160: i*=2 ))
-
+for (( i = 1; i <= 64; i+=2 ))
 do
-
-if [$i -le 8]
-then
-
-mpisubmit.pl -p $j -t $i run_omp_polus
-
-elif [$j -ge 4]
-then
-
-mpisubmit.pl -p $j -t $i run_omp_polus
-
-fi
-
+mpisubmit.pl -p $i --stdout ./out_files/mpi/$j.$i.out --stderr ./err_files/mpi/$j.$i.err ./2mm_mpi
 done
 done
