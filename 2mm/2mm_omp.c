@@ -117,7 +117,7 @@ static void kernel_2mm(int ni,
 int main(int argc, char** argv) {
 
   if (argc == 1){
-    file_path = "~/skipod/skipod_polus/2mm1/result_omp.csv";
+    file_path = "./result_omp_polus.csv";
   } else {
     file_path = argv[1];
   }
