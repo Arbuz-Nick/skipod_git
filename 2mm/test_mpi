@@ -2,7 +2,7 @@
 echo "Time;Nthreads">result_mpi.csv
 for ((j = 0; j < 10; j++))
 do
-for ((i = 1; i <= 16; i++))
+for ((i = 1; i <= 4; i++))
 do
 mpiexec -n $i ./2mm_mpi "./result_mpi.csv"
 done

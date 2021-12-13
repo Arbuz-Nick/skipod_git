@@ -143,18 +143,6 @@ int main(int argc, char** argv) {
 
   init_array(ni, nj, nk, nl, &alpha, &beta, *A, *B, *C, *D);
 
-  /*printf("A:\n");
-  print_array(ni, nk, *A);
-
-  printf("B:\n");
-  print_array(nk, nj, *B);
-
-  printf("C:\n");
-  print_array(nj, nl, *C);
-
-  printf("D:\n");
-  print_array(ni, nl, *D);*/
-
   MPI_Init(&argc, &argv);
   // Получаем номер конкретного процесса на котором запущена программа
   MPI_Comm_rank(MPI_COMM_WORLD, &process_id);
@@ -172,7 +160,7 @@ int main(int argc, char** argv) {
     bench_timer_stop();
     bench_timer_print();
   }
-
+/*
   if (process_id == FIRST_THREAD) {
     for (int i = 1; i < process_num; i++) {
       int buf[1];
@@ -183,7 +171,8 @@ int main(int argc, char** argv) {
   } else {
     int buf[1] = {process_id};
     MPI_Send(&buf, 1, MPI_INT, FIRST_THREAD, 0, MPI_COMM_WORLD);
-  }
+  }*/
+  MPI_Barrier(MPI_COMM_WORLD);
   MPI_Finalize();
 
   if (argc > 42 && !strcmp(argv[0], ""))
