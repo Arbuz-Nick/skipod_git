@@ -96,20 +96,20 @@ static void kernel_2mm(int ni,
   int stop = ni * (process_id + 1);
   stop /= process_num;
   stop = stop == process_num - 1 ? process_num : stop;
-  printf("Process %d::Before 1 for\n", process_id);
+  printf("Process %d: Before 1 for\n", process_id);
   for (i = start; i < stop; i++)
     for (j = 0; j < nj; j++)
       tmp[i][j] = 0.0f;
-  printf("Process %d::Before 2 for\n", process_id);
+  printf("Process %d: Before 2 for\n", process_id);
   for (i = start; i < stop; i++)
     for (k = 0; k < nk; ++k)
       for (j = 0; j < nj; j++)
         tmp[i][j] += alpha * A[i][k] * B[k][j];
-  printf("Process %d::Before 3 for\n", process_id);
+  printf("Process %d: Before 3 for\n", process_id);
   for (i = start; i < stop; i++)
     for (j = 0; j < nl; j++)
       D[i][j] *= beta;
-  printf("Process %d::Before 4 for\n", process_id);
+  printf("Process %d: Before 4 for\n", process_id);
   for (i = start; i < stop; i++)
     for (k = 0; k < nj; ++k)
       for (j = 0; j < nl; j++)
@@ -118,6 +118,7 @@ static void kernel_2mm(int ni,
 
 int main(int argc, char** argv) {
   setbuf(stdout, 0);
+  printf("Start_pogram\n");
   if (argc == 1) {
     file_path = "./result_mpi_polus.csv";
   } else {
@@ -141,11 +142,13 @@ int main(int argc, char** argv) {
   C = (float(*)[nj][nl])malloc((nj) * (nl) * sizeof(float));
   float(*D)[ni][nl];
   D = (float(*)[ni][nl])malloc((ni) * (nl) * sizeof(float));
-
+  printf("Make memory place\n");
+    
   init_array(ni, nj, nk, nl, &alpha, &beta, *A, *B, *C, *D);
-
+  printf("Initialization complited\n");
+    
   MPI_Init(&argc, &argv);
-
+  printf("Start parallel section\n");
   // Получаем номер конкретного процесса на котором запущена программа
   MPI_Comm_rank(MPI_COMM_WORLD, &process_id);
 
@@ -153,14 +156,14 @@ int main(int argc, char** argv) {
   MPI_Comm_size(MPI_COMM_WORLD, &process_num);
 
   if (process_id == FIRST_THREAD) {
-    printf("Process %d::Start parallel section and run timer\n", process_id);
+    printf("Process %d: Run timer\n", process_id);
     bench_timer_start();
   }
 
   kernel_2mm(ni, nj, nk, nl, alpha, beta, *tmp, *A, *B, *C, *D);
   if (process_id == FIRST_THREAD) {
     bench_timer_stop();
-    printf("Process %d::Timer stoped\n", process_id);
+    printf("Process %d: Timer stoped\n", process_id);
     bench_timer_print();
   }
 /*
