@@ -1,7 +1,7 @@
 #! /bin/bash
 rm -rf ./out_files/omp/*.out
 rm -rf ./err_files/omp/*.err
-echo "Time;Nthreads">result_omp_polus.csv
+#echo "Time;Nthreads">result_omp_polus.csv
 for ((i = 0; i <= 160; i+=2))
 do
 bsub < ./lsf_files/$i.lsf
