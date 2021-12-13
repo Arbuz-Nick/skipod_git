@@ -153,7 +153,7 @@ int main(int argc, char** argv) {
   MPI_Comm_size(MPI_COMM_WORLD, &process_num);
 
   if (process_id == FIRST_THREAD) {
-    printf("Process %d::Start [arallel section and run timer\n", process_id);
+    printf("Process %d::Start parallel section and run timer\n", process_id);
     bench_timer_start();
   }
 
