@@ -5,7 +5,7 @@ test_mpi: mpi test_mpi
 	./test_mpi
 
 mpi_polus: 2mm_mpi.c 2mm_mpi.h
-	mpicc ./2mm_mpi.c -o 2mm_mpi -std=c99
+	mpicc ./2mm_mpi.c 2mm_mpi.h -o 2mm_mpi -std=c99
 
 mpi: 2mm_mpi.c 2mm_mpi.h
 	mpicc ./2mm_mpi.c ./2mm_mpi.h -o 2mm_mpi

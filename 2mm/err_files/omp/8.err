@@ -1,0 +1,1 @@
+/home_edu/edu-cmc-sqi21/edu-cmc-sqi21-01/.lsbatch/1639433123.837576.shell: line 6: 43953 Segmentation fault      (core dumped) OMP_NUM_THREADS=8 ./2mm_omp

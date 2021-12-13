@@ -1,11 +1,8 @@
 #! /bin/bash
+rm -rf ./out_files/omp/*.out
+rm -rf ./err_files/omp/*.err
 echo "Time;Nthreads">result_omp_polus.csv
 for ((i = 0; i <= 160; i+=2))
 do
-if [ $i -eq 0 ]
-then
-bsub < ./lsf_files/1.lsf
-else 
 bsub < ./lsf_files/$i.lsf
-fi 
 done
