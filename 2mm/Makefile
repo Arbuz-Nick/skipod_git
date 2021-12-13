@@ -1,11 +1,14 @@
 test_mpi_polus: mpi test_mpi_polus
-	./test_mpi_polus
+        ./test_mpi_polus
 
 test_mpi: mpi test_mpi
-	./test_mpi
+        ./test_mpi
+
+mpi_polus: 2mm_mpi.c 2mm_mpi.h
+        mpicc ./2mm_mpi.c 2mm_mpi.h -o 2mm_mpi -std=c99
 
 mpi: 2mm_mpi.c 2mm_mpi.h
-	mpicc ./2mm_mpi.c 2mm_mpi.h -o 2mm_mpi
+        mpicc ./2mm_mpi.c 2mm_mpi.h -o 2mm_mpi
 
 test_omp_polus: omp test_omp
 	./test_omp_polus
