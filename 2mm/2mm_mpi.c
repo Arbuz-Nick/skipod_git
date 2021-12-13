@@ -117,6 +117,7 @@ static void kernel_2mm(int ni,
 }
 
 int main(int argc, char** argv) {
+  setbuf(stdout, 0);
   if (argc == 1) {
     file_path = "./result_mpi_polus.csv";
   } else {
@@ -144,6 +145,7 @@ int main(int argc, char** argv) {
   init_array(ni, nj, nk, nl, &alpha, &beta, *A, *B, *C, *D);
 
   MPI_Init(&argc, &argv);
+
   // Получаем номер конкретного процесса на котором запущена программа
   MPI_Comm_rank(MPI_COMM_WORLD, &process_id);
 
@@ -151,6 +153,7 @@ int main(int argc, char** argv) {
   MPI_Comm_size(MPI_COMM_WORLD, &process_num);
 
   if (process_id == FIRST_THREAD) {
+    printf("Process %d::Start [arallel section and run timer\n", process_id);
     bench_timer_start();
   }
 
