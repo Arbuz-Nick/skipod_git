@@ -1,8 +1,8 @@
 /* Include benchmark-specific header. */
 #include "2mm_mpi.h"
 #define FIRST_THREAD 0
-int nthreads;
-int threadid;
+int process_num;
+int process_id;
 double bench_t_start, bench_t_end;
 char* file_path;
 
@@ -83,19 +83,19 @@ static void kernel_2mm(int ni,
                        float B[nk][nj],
                        float C[nj][nl],
                        float D[ni][nl]) {
-  if (threadid == FIRST_THREAD) {
+  if (process_id == FIRST_THREAD) {
     FILE* fout;
     fout = fopen(file_path, "a+");
-    printf("Nthread = %d\n", nthreads);
-    fprintf(fout, "%d\n", nthreads);
+    printf("Nthread = %d\n", process_num);
+    fprintf(fout, "%d\n", process_num);
   }
   int i, j, k;
 
-  int start = (ni * threadid);
-  start /= nthreads;
-  int stop = ni * (threadid + 1);
-  stop /= nthreads;
-  stop = stop == nthreads - 1 ? nthreads : stop;
+  int start = (ni * process_id);
+  start /= process_num;
+  int stop = ni * (process_id + 1);
+  stop /= process_num;
+  stop = stop == process_num - 1 ? process_num : stop;
 
   for (i = start; i < stop; i++)
     for (j = 0; j < nj; j++)
@@ -157,22 +157,32 @@ int main(int argc, char** argv) {
 
   MPI_Init(&argc, &argv);
   // Получаем номер конкретного процесса на котором запущена программа
-  MPI_Comm_rank(MPI_COMM_WORLD, &threadid);
+  MPI_Comm_rank(MPI_COMM_WORLD, &process_id);
 
   // Получаем количество запущенных процессов
-  MPI_Comm_size(MPI_COMM_WORLD, &nthreads);
+  MPI_Comm_size(MPI_COMM_WORLD, &process_num);
 
-  if (threadid == FIRST_THREAD) {
+  if (process_id == FIRST_THREAD) {
     bench_timer_start();
   }
 
   kernel_2mm(ni, nj, nk, nl, alpha, beta, *tmp, *A, *B, *C, *D);
 
-  if (threadid == FIRST_THREAD) {
+  if (process_id == FIRST_THREAD) {
     bench_timer_stop();
     bench_timer_print();
   }
 
+  if (process_id == FIRST_THREAD) {
+    for (int i = 1; i < process_num; i++) {
+      int buf[1];
+      MPI_Status status;
+      MPI_Recv(&buf, 1, MPI_INT, MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_COMM_WORLD, &status);
+    } else {
+      int buf[1] = {process_id};
+      MPI_Send(&buf, 1, MPI_INT, FIRST_THREAD, 0, MPI_COMM_WORLD);
+    }
+  }
   MPI_Finalize();
 
   if (argc > 42 && !strcmp(argv[0], ""))
