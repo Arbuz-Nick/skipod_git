@@ -96,20 +96,20 @@ static void kernel_2mm(int ni,
   int stop = ni * (process_id + 1);
   stop /= process_num;
   stop = stop == process_num - 1 ? process_num : stop;
-
+  printf("Process %d::Before 1 for\n", process_id);
   for (i = start; i < stop; i++)
     for (j = 0; j < nj; j++)
       tmp[i][j] = 0.0f;
-
+  printf("Process %d::Before 2 for\n", process_id);
   for (i = start; i < stop; i++)
     for (k = 0; k < nk; ++k)
       for (j = 0; j < nj; j++)
         tmp[i][j] += alpha * A[i][k] * B[k][j];
-
+  printf("Process %d::Before 3 for\n", process_id);
   for (i = start; i < stop; i++)
     for (j = 0; j < nl; j++)
       D[i][j] *= beta;
-
+  printf("Process %d::Before 4 for\n", process_id);
   for (i = start; i < stop; i++)
     for (k = 0; k < nj; ++k)
       for (j = 0; j < nl; j++)
@@ -155,9 +155,9 @@ int main(int argc, char** argv) {
   }
 
   kernel_2mm(ni, nj, nk, nl, alpha, beta, *tmp, *A, *B, *C, *D);
-
   if (process_id == FIRST_THREAD) {
     bench_timer_stop();
+    printf("Process %d::Timer stoped\n", process_id);
     bench_timer_print();
   }
 /*
@@ -172,7 +172,11 @@ int main(int argc, char** argv) {
     int buf[1] = {process_id};
     MPI_Send(&buf, 1, MPI_INT, FIRST_THREAD, 0, MPI_COMM_WORLD);
   }*/
+  printf("Process %d::Reached the barrier\n", process_id); 
   MPI_Barrier(MPI_COMM_WORLD);
+  if (process_id == FIRST_THREAD) {
+    printf("Process %d::Finish\n", process_id);
+  }
   MPI_Finalize();
 
   if (argc > 42 && !strcmp(argv[0], ""))
