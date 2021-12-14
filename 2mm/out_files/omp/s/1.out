@@ -1,0 +1,98 @@
+Sender: LSF System <lsfadmin@polus-c2-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 839857: <#BSUB -n 1;#BSUB -W 00:15;#BSUB -o "./out_files/omp/s/1.out";#BSUB -e "./err_files/omp/s/1.err";#BSUB -R "span[hosts=1]";OMP_NUM_THREADS=1 ./2mm_omp_s> in cluster <MSUCluster> Done
+
+Job <#BSUB -n 1;#BSUB -W 00:15;#BSUB -o "./out_files/omp/s/1.out";#BSUB -e "./err_files/omp/s/1.err";#BSUB -R "span[hosts=1]";OMP_NUM_THREADS=1 ./2mm_omp_s> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-sqi21-01> in cluster <MSUCluster> at Wed Dec 15 00:53:21 2021
+Job was executed on host(s) <polus-c2-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-sqi21-01> in cluster <MSUCluster> at Wed Dec 15 00:53:21 2021
+</home_edu/edu-cmc-sqi21/edu-cmc-sqi21-01> was used as the home directory.
+</home_edu/edu-cmc-sqi21/edu-cmc-sqi21-01/skipod/skipod_git/2mm> was used as the working directory.
+Started at Wed Dec 15 00:53:21 2021
+Terminated at Wed Dec 15 00:53:24 2021
+Results reported at Wed Dec 15 00:53:24 2021
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -n 1
+#BSUB -W 00:15
+#BSUB -o "./out_files/omp/s/1.out"
+#BSUB -e "./err_files/omp/s/1.err"
+#BSUB -R "span[hosts=1]"
+OMP_NUM_THREADS=1 ./2mm_omp_s
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   0.04 sec.
+    Max Memory :                                 4 MB
+    Average Memory :                             1.33 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              1
+    Max Threads :                                1
+    Run time :                                   1 sec.
+    Turnaround time :                            3 sec.
+
+The output (if any) follows:
+
+Nthread = 1
+Time in seconds = 0.007013
+
+
+PS:
+
+Read file <./err_files/omp/s/1.err> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@polus-c1-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 839901: <#BSUB -n 1;#BSUB -W 00:15;#BSUB -o "./out_files/omp/s/1.out";#BSUB -e "./err_files/omp/s/1.err";#BSUB -R "span[hosts=1]";OMP_NUM_THREADS=1 ./2mm_omp_s> in cluster <MSUCluster> Done
+
+Job <#BSUB -n 1;#BSUB -W 00:15;#BSUB -o "./out_files/omp/s/1.out";#BSUB -e "./err_files/omp/s/1.err";#BSUB -R "span[hosts=1]";OMP_NUM_THREADS=1 ./2mm_omp_s> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-sqi21-01> in cluster <MSUCluster> at Wed Dec 15 00:56:06 2021
+Job was executed on host(s) <polus-c1-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-sqi21-01> in cluster <MSUCluster> at Wed Dec 15 00:56:07 2021
+</home_edu/edu-cmc-sqi21/edu-cmc-sqi21-01> was used as the home directory.
+</home_edu/edu-cmc-sqi21/edu-cmc-sqi21-01/skipod/skipod_git/2mm> was used as the working directory.
+Started at Wed Dec 15 00:56:07 2021
+Terminated at Wed Dec 15 00:56:10 2021
+Results reported at Wed Dec 15 00:56:10 2021
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -n 1
+#BSUB -W 00:15
+#BSUB -o "./out_files/omp/s/1.out"
+#BSUB -e "./err_files/omp/s/1.err"
+#BSUB -R "span[hosts=1]"
+OMP_NUM_THREADS=1 ./2mm_omp_s
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   0.02 sec.
+    Max Memory :                                 4 MB
+    Average Memory :                             3.00 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              3
+    Max Threads :                                4
+    Run time :                                   1 sec.
+    Turnaround time :                            4 sec.
+
+The output (if any) follows:
+
+Nthread = 1
+Time in seconds = 0.003064
+
+
+PS:
+
+Read file <./err_files/omp/s/1.err> for stderr output of this job.
+

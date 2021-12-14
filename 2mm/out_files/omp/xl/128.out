@@ -1,0 +1,98 @@
+Sender: LSF System <lsfadmin@polus-c1-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 839888: <#BSUB -n 17;#BSUB -W 00:15;#BSUB -o "./out_files/omp/xl/128.out";#BSUB -e "./err_files/omp/xl/128.err";#BSUB -R "span[hosts=1]";OMP_NUM_THREADS=128 ./2mm_omp_xl> in cluster <MSUCluster> Done
+
+Job <#BSUB -n 17;#BSUB -W 00:15;#BSUB -o "./out_files/omp/xl/128.out";#BSUB -e "./err_files/omp/xl/128.err";#BSUB -R "span[hosts=1]";OMP_NUM_THREADS=128 ./2mm_omp_xl> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-sqi21-01> in cluster <MSUCluster> at Wed Dec 15 00:53:22 2021
+Job was executed on host(s) <17*polus-c1-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-sqi21-01> in cluster <MSUCluster> at Wed Dec 15 00:55:05 2021
+</home_edu/edu-cmc-sqi21/edu-cmc-sqi21-01> was used as the home directory.
+</home_edu/edu-cmc-sqi21/edu-cmc-sqi21-01/skipod/skipod_git/2mm> was used as the working directory.
+Started at Wed Dec 15 00:55:05 2021
+Terminated at Wed Dec 15 00:55:13 2021
+Results reported at Wed Dec 15 00:55:13 2021
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -n 17
+#BSUB -W 00:15
+#BSUB -o "./out_files/omp/xl/128.out"
+#BSUB -e "./err_files/omp/xl/128.err"
+#BSUB -R "span[hosts=1]"
+OMP_NUM_THREADS=128 ./2mm_omp_xl
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   645.06 sec.
+    Max Memory :                                 84 MB
+    Average Memory :                             56.33 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                132
+    Run time :                                   7 sec.
+    Turnaround time :                            111 sec.
+
+The output (if any) follows:
+
+Nthread = 128
+Time in seconds = 6.693609
+
+
+PS:
+
+Read file <./err_files/omp/xl/128.err> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@polus-c4-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 839932: <#BSUB -n 17;#BSUB -W 00:15;#BSUB -o "./out_files/omp/xl/128.out";#BSUB -e "./err_files/omp/xl/128.err";#BSUB -R "span[hosts=1]";OMP_NUM_THREADS=128 ./2mm_omp_xl> in cluster <MSUCluster> Done
+
+Job <#BSUB -n 17;#BSUB -W 00:15;#BSUB -o "./out_files/omp/xl/128.out";#BSUB -e "./err_files/omp/xl/128.err";#BSUB -R "span[hosts=1]";OMP_NUM_THREADS=128 ./2mm_omp_xl> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-sqi21-01> in cluster <MSUCluster> at Wed Dec 15 00:56:07 2021
+Job was executed on host(s) <17*polus-c4-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-sqi21-01> in cluster <MSUCluster> at Wed Dec 15 00:57:27 2021
+</home_edu/edu-cmc-sqi21/edu-cmc-sqi21-01> was used as the home directory.
+</home_edu/edu-cmc-sqi21/edu-cmc-sqi21-01/skipod/skipod_git/2mm> was used as the working directory.
+Started at Wed Dec 15 00:57:27 2021
+Terminated at Wed Dec 15 00:57:35 2021
+Results reported at Wed Dec 15 00:57:35 2021
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -n 17
+#BSUB -W 00:15
+#BSUB -o "./out_files/omp/xl/128.out"
+#BSUB -e "./err_files/omp/xl/128.err"
+#BSUB -R "span[hosts=1]"
+OMP_NUM_THREADS=128 ./2mm_omp_xl
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   686.77 sec.
+    Max Memory :                                 84 MB
+    Average Memory :                             57.33 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                132
+    Run time :                                   9 sec.
+    Turnaround time :                            88 sec.
+
+The output (if any) follows:
+
+Nthread = 128
+Time in seconds = 7.255575
+
+
+PS:
+
+Read file <./err_files/omp/xl/128.err> for stderr output of this job.
+

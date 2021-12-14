@@ -25,7 +25,7 @@ void bench_timer_stop() {
 void bench_timer_print() {
   FILE* fout;
   fout = fopen(file_path, "a+");
-  fprintf(fout, "%0.6lf;%d;%d*%d*%d*%d", bench_t_end - bench_t_start, nthreads, NI, NJ, NK, NL);
+  fprintf(fout, "%0.6lf;%d;%d*%d*%d*%d\n", bench_t_end - bench_t_start, nthreads, NI, NJ, NK, NL);
   printf("Time in seconds = %0.6lf\n", bench_t_end - bench_t_start);
 }
 
@@ -87,10 +87,7 @@ static void kernel_2mm(int ni,
     nthreads = omp_get_num_threads();
 #pragma omp master
     {
-      FILE* fout;
-      fout = fopen(file_path, "a+");
       printf("Nthread = %d\n", nthreads);
-      //fprintf(fout, "%d;%d*%d*%d*%d\n", nthreads, ni, nj, nk, nl);
     }
     int i, j, k;
     for (i = 0; i < ni; i++)

@@ -1,0 +1,98 @@
+Sender: LSF System <lsfadmin@polus-c1-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 839887: <#BSUB -n 9;#BSUB -W 00:15;#BSUB -o "./out_files/omp/xl/64.out";#BSUB -e "./err_files/omp/xl/64.err";#BSUB -R "span[hosts=1]";OMP_NUM_THREADS=64 ./2mm_omp_xl> in cluster <MSUCluster> Done
+
+Job <#BSUB -n 9;#BSUB -W 00:15;#BSUB -o "./out_files/omp/xl/64.out";#BSUB -e "./err_files/omp/xl/64.err";#BSUB -R "span[hosts=1]";OMP_NUM_THREADS=64 ./2mm_omp_xl> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-sqi21-01> in cluster <MSUCluster> at Wed Dec 15 00:53:22 2021
+Job was executed on host(s) <9*polus-c1-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-sqi21-01> in cluster <MSUCluster> at Wed Dec 15 00:54:37 2021
+</home_edu/edu-cmc-sqi21/edu-cmc-sqi21-01> was used as the home directory.
+</home_edu/edu-cmc-sqi21/edu-cmc-sqi21-01/skipod/skipod_git/2mm> was used as the working directory.
+Started at Wed Dec 15 00:54:37 2021
+Terminated at Wed Dec 15 00:54:49 2021
+Results reported at Wed Dec 15 00:54:49 2021
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -n 9
+#BSUB -W 00:15
+#BSUB -o "./out_files/omp/xl/64.out"
+#BSUB -e "./err_files/omp/xl/64.err"
+#BSUB -R "span[hosts=1]"
+OMP_NUM_THREADS=64 ./2mm_omp_xl
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   531.12 sec.
+    Max Memory :                                 80 MB
+    Average Memory :                             60.25 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                68
+    Run time :                                   10 sec.
+    Turnaround time :                            87 sec.
+
+The output (if any) follows:
+
+Nthread = 64
+Time in seconds = 10.292114
+
+
+PS:
+
+Read file <./err_files/omp/xl/64.err> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@polus-c1-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 839931: <#BSUB -n 9;#BSUB -W 00:15;#BSUB -o "./out_files/omp/xl/64.out";#BSUB -e "./err_files/omp/xl/64.err";#BSUB -R "span[hosts=1]";OMP_NUM_THREADS=64 ./2mm_omp_xl> in cluster <MSUCluster> Done
+
+Job <#BSUB -n 9;#BSUB -W 00:15;#BSUB -o "./out_files/omp/xl/64.out";#BSUB -e "./err_files/omp/xl/64.err";#BSUB -R "span[hosts=1]";OMP_NUM_THREADS=64 ./2mm_omp_xl> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-sqi21-01> in cluster <MSUCluster> at Wed Dec 15 00:56:07 2021
+Job was executed on host(s) <9*polus-c1-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-sqi21-01> in cluster <MSUCluster> at Wed Dec 15 00:57:21 2021
+</home_edu/edu-cmc-sqi21/edu-cmc-sqi21-01> was used as the home directory.
+</home_edu/edu-cmc-sqi21/edu-cmc-sqi21-01/skipod/skipod_git/2mm> was used as the working directory.
+Started at Wed Dec 15 00:57:21 2021
+Terminated at Wed Dec 15 00:57:33 2021
+Results reported at Wed Dec 15 00:57:33 2021
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -n 9
+#BSUB -W 00:15
+#BSUB -o "./out_files/omp/xl/64.out"
+#BSUB -e "./err_files/omp/xl/64.err"
+#BSUB -R "span[hosts=1]"
+OMP_NUM_THREADS=64 ./2mm_omp_xl
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   550.22 sec.
+    Max Memory :                                 80 MB
+    Average Memory :                             60.25 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                68
+    Run time :                                   13 sec.
+    Turnaround time :                            86 sec.
+
+The output (if any) follows:
+
+Nthread = 64
+Time in seconds = 10.845782
+
+
+PS:
+
+Read file <./err_files/omp/xl/64.err> for stderr output of this job.
+
