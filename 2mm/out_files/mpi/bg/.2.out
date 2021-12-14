@@ -1,0 +1,23 @@
+Start_pogramStart_pogram
+
+Make memory placeMake memory place
+
+Initialization complitedInitialization complited
+
+Start parallel sectionStart parallel section
+
+Process 1: Before 1 for
+Process 0: Run timer
+Nthread = 2
+Process 0: Before 1 for
+Process 1: Before 2 for
+Process 0: Before 2 for
+Process 1: Before 3 for
+Process 0: Before 3 for
+Process 1: Before 4 for
+Process 0: Before 4 for
+Process 0: Timer stoped
+Process 1::Reached the barrier
+Time in seconds = 95.812029
+Process 0::Reached the barrier
+Process 0::Finish
