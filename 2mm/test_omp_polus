@@ -1,8 +1,37 @@
 #! /bin/bash
 rm -rf ./out_files/omp/*.out
 rm -rf ./err_files/omp/*.err
-#echo "Time;Nthreads">result_omp_polus.csv
-for ((i = 0; i <= 160; i+=2))
+echo "Time;Nthreads;MatrixSize">result_omp_polus.csv
+
+make omp_polus_mini
+for ((i = 1; i <= 128; i*=2))
 do
 bsub < ./lsf_files/$i.lsf
 done
+
+make omp_polus_small
+for ((i = 1; i <= 128; i*=2))
+do
+bsub < ./lsf_files/$i.lsf
+done
+
+make omp_polus_medium
+for ((i = 1; i <= 128; i*=2))
+do
+bsub < ./lsf_files/$i.lsf
+done
+
+make omp_polus_large
+for ((i = 1; i <= 128; i*=2))
+do
+bsub < ./lsf_files/$i.lsf
+done
+
+make omp_polus_xlarge
+for ((i = 1; i <= 128; i*=2))
+do
+bsub < ./lsf_files/$i.lsf
+done
+
+
+
