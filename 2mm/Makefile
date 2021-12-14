@@ -17,7 +17,7 @@ mpi_polus: 2mm_mpi.c 2mm_mpi.h
 mpi: 2mm_mpi.c 2mm_mpi.h
 	mpicc ./2mm_mpi.c ./2mm_mpi.h -o 2mm_mpi
 
-test_omp_polus:
+test_omp_polus: test_omp_polus
 	./test_omp_polus
 
 test_omp: omp 2mm_omp

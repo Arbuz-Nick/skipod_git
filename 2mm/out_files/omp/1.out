@@ -1,7 +1,7 @@
 Sender: LSF System <lsfadmin@polus-c1-ib.bmc.hpc.cs.msu.ru>
-Subject: Job 839545: <#BSUB -n 1;#BSUB -W 00:15;#BSUB -o "./out_files/omp/2.out";#BSUB -e "./err_files/omp/2.err";#BSUB -R "span[hosts=1]";OMP_NUM_THREADS=2 ./2mm_omp> in cluster <MSUCluster> Done
+Subject: Job 839544: <#BSUB -n 1;#BSUB -W 00:15;#BSUB -o "./out_files/omp/1.out";#BSUB -e "./err_files/omp/1.err";#BSUB -R "span[hosts=1]";OMP_NUM_THREADS=1 ./2mm_omp> in cluster <MSUCluster> Done
 
-Job <#BSUB -n 1;#BSUB -W 00:15;#BSUB -o "./out_files/omp/2.out";#BSUB -e "./err_files/omp/2.err";#BSUB -R "span[hosts=1]";OMP_NUM_THREADS=2 ./2mm_omp> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-sqi21-01> in cluster <MSUCluster> at Tue Dec 14 23:25:52 2021
+Job <#BSUB -n 1;#BSUB -W 00:15;#BSUB -o "./out_files/omp/1.out";#BSUB -e "./err_files/omp/1.err";#BSUB -R "span[hosts=1]";OMP_NUM_THREADS=1 ./2mm_omp> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-sqi21-01> in cluster <MSUCluster> at Tue Dec 14 23:25:52 2021
 Job was executed on host(s) <polus-c1-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-sqi21-01> in cluster <MSUCluster> at Tue Dec 14 23:25:54 2021
 </home_edu/edu-cmc-sqi21/edu-cmc-sqi21-01> was used as the home directory.
 </home_edu/edu-cmc-sqi21/edu-cmc-sqi21-01/skipod/skipod_git/2mm> was used as the working directory.
@@ -15,10 +15,10 @@ Your job looked like:
 # LSBATCH: User input
 #BSUB -n 1
 #BSUB -W 00:15
-#BSUB -o "./out_files/omp/2.out"
-#BSUB -e "./err_files/omp/2.err"
+#BSUB -o "./out_files/omp/1.out"
+#BSUB -e "./err_files/omp/1.err"
 #BSUB -R "span[hosts=1]"
-OMP_NUM_THREADS=2 ./2mm_omp
+OMP_NUM_THREADS=1 ./2mm_omp
 
 ------------------------------------------------------------
 
@@ -39,22 +39,22 @@ Resource usage summary:
 
 The output (if any) follows:
 
-Nthread = 2
-Time in seconds = 0.002685
+Nthread = 1
+Time in seconds = 0.002845
 
 
 PS:
 
-Read file <./err_files/omp/2.err> for stderr output of this job.
+Read file <./err_files/omp/1.err> for stderr output of this job.
 
 Sender: LSF System <lsfadmin@polus-c1-ib.bmc.hpc.cs.msu.ru>
-Subject: Job 839559: <#BSUB -n 1;#BSUB -W 00:15;#BSUB -o "./out_files/omp/2.out";#BSUB -e "./err_files/omp/2.err";#BSUB -R "span[hosts=1]";OMP_NUM_THREADS=2 ./2mm_omp> in cluster <MSUCluster> Done
+Subject: Job 839558: <#BSUB -n 1;#BSUB -W 00:15;#BSUB -o "./out_files/omp/1.out";#BSUB -e "./err_files/omp/1.err";#BSUB -R "span[hosts=1]";OMP_NUM_THREADS=1 ./2mm_omp> in cluster <MSUCluster> Done
 
-Job <#BSUB -n 1;#BSUB -W 00:15;#BSUB -o "./out_files/omp/2.out";#BSUB -e "./err_files/omp/2.err";#BSUB -R "span[hosts=1]";OMP_NUM_THREADS=2 ./2mm_omp> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-sqi21-01> in cluster <MSUCluster> at Tue Dec 14 23:27:53 2021
-Job was executed on host(s) <polus-c1-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-sqi21-01> in cluster <MSUCluster> at Tue Dec 14 23:27:54 2021
+Job <#BSUB -n 1;#BSUB -W 00:15;#BSUB -o "./out_files/omp/1.out";#BSUB -e "./err_files/omp/1.err";#BSUB -R "span[hosts=1]";OMP_NUM_THREADS=1 ./2mm_omp> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-sqi21-01> in cluster <MSUCluster> at Tue Dec 14 23:27:53 2021
+Job was executed on host(s) <polus-c1-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-sqi21-01> in cluster <MSUCluster> at Tue Dec 14 23:27:53 2021
 </home_edu/edu-cmc-sqi21/edu-cmc-sqi21-01> was used as the home directory.
 </home_edu/edu-cmc-sqi21/edu-cmc-sqi21-01/skipod/skipod_git/2mm> was used as the working directory.
-Started at Tue Dec 14 23:27:54 2021
+Started at Tue Dec 14 23:27:53 2021
 Terminated at Tue Dec 14 23:27:54 2021
 Results reported at Tue Dec 14 23:27:54 2021
 
@@ -64,10 +64,10 @@ Your job looked like:
 # LSBATCH: User input
 #BSUB -n 1
 #BSUB -W 00:15
-#BSUB -o "./out_files/omp/2.out"
-#BSUB -e "./err_files/omp/2.err"
+#BSUB -o "./out_files/omp/1.out"
+#BSUB -e "./err_files/omp/1.err"
 #BSUB -R "span[hosts=1]"
-OMP_NUM_THREADS=2 ./2mm_omp
+OMP_NUM_THREADS=1 ./2mm_omp
 
 ------------------------------------------------------------
 
@@ -76,30 +76,30 @@ Successfully completed.
 Resource usage summary:
 
     CPU time :                                   0.02 sec.
-    Max Memory :                                 4 MB
-    Average Memory :                             2.00 MB
+    Max Memory :                                 1 MB
+    Average Memory :                             1.00 MB
     Total Requested Memory :                     -
     Delta Memory :                               -
     Max Swap :                                   -
     Max Processes :                              1
     Max Threads :                                1
-    Run time :                                   1 sec.
+    Run time :                                   5 sec.
     Turnaround time :                            1 sec.
 
 The output (if any) follows:
 
-Nthread = 2
-Time in seconds = 0.001622
+Nthread = 1
+Time in seconds = 0.003116
 
 
 PS:
 
-Read file <./err_files/omp/2.err> for stderr output of this job.
+Read file <./err_files/omp/1.err> for stderr output of this job.
 
 Sender: LSF System <lsfadmin@polus-c4-ib.bmc.hpc.cs.msu.ru>
-Subject: Job 839569: <#BSUB -n 1;#BSUB -W 00:15;#BSUB -o "./out_files/omp/2.out";#BSUB -e "./err_files/omp/2.err";#BSUB -R "span[hosts=1]";OMP_NUM_THREADS=2 ./2mm_omp> in cluster <MSUCluster> Done
+Subject: Job 839568: <#BSUB -n 1;#BSUB -W 00:15;#BSUB -o "./out_files/omp/1.out";#BSUB -e "./err_files/omp/1.err";#BSUB -R "span[hosts=1]";OMP_NUM_THREADS=1 ./2mm_omp> in cluster <MSUCluster> Done
 
-Job <#BSUB -n 1;#BSUB -W 00:15;#BSUB -o "./out_files/omp/2.out";#BSUB -e "./err_files/omp/2.err";#BSUB -R "span[hosts=1]";OMP_NUM_THREADS=2 ./2mm_omp> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-sqi21-01> in cluster <MSUCluster> at Tue Dec 14 23:29:53 2021
+Job <#BSUB -n 1;#BSUB -W 00:15;#BSUB -o "./out_files/omp/1.out";#BSUB -e "./err_files/omp/1.err";#BSUB -R "span[hosts=1]";OMP_NUM_THREADS=1 ./2mm_omp> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-sqi21-01> in cluster <MSUCluster> at Tue Dec 14 23:29:53 2021
 Job was executed on host(s) <polus-c4-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-sqi21-01> in cluster <MSUCluster> at Tue Dec 14 23:29:54 2021
 </home_edu/edu-cmc-sqi21/edu-cmc-sqi21-01> was used as the home directory.
 </home_edu/edu-cmc-sqi21/edu-cmc-sqi21-01/skipod/skipod_git/2mm> was used as the working directory.
@@ -113,10 +113,10 @@ Your job looked like:
 # LSBATCH: User input
 #BSUB -n 1
 #BSUB -W 00:15
-#BSUB -o "./out_files/omp/2.out"
-#BSUB -e "./err_files/omp/2.err"
+#BSUB -o "./out_files/omp/1.out"
+#BSUB -e "./err_files/omp/1.err"
 #BSUB -R "span[hosts=1]"
-OMP_NUM_THREADS=2 ./2mm_omp
+OMP_NUM_THREADS=1 ./2mm_omp
 
 ------------------------------------------------------------
 
@@ -124,37 +124,37 @@ Successfully completed.
 
 Resource usage summary:
 
-    CPU time :                                   0.28 sec.
-    Max Memory :                                 1 MB
-    Average Memory :                             1.00 MB
+    CPU time :                                   0.31 sec.
+    Max Memory :                                 6 MB
+    Average Memory :                             4.33 MB
     Total Requested Memory :                     -
     Delta Memory :                               -
     Max Swap :                                   -
-    Max Processes :                              1
-    Max Threads :                                1
+    Max Processes :                              4
+    Max Threads :                                5
     Run time :                                   5 sec.
     Turnaround time :                            2 sec.
 
 The output (if any) follows:
 
-Nthread = 2
-Time in seconds = 0.134769
+Nthread = 1
+Time in seconds = 0.281852
 
 
 PS:
 
-Read file <./err_files/omp/2.err> for stderr output of this job.
+Read file <./err_files/omp/1.err> for stderr output of this job.
 
 Sender: LSF System <lsfadmin@polus-c1-ib.bmc.hpc.cs.msu.ru>
-Subject: Job 839588: <#BSUB -n 1;#BSUB -W 00:15;#BSUB -o "./out_files/omp/2.out";#BSUB -e "./err_files/omp/2.err";#BSUB -R "span[hosts=1]";OMP_NUM_THREADS=2 ./2mm_omp> in cluster <MSUCluster> Done
+Subject: Job 839587: <#BSUB -n 1;#BSUB -W 00:15;#BSUB -o "./out_files/omp/1.out";#BSUB -e "./err_files/omp/1.err";#BSUB -R "span[hosts=1]";OMP_NUM_THREADS=1 ./2mm_omp> in cluster <MSUCluster> Done
 
-Job <#BSUB -n 1;#BSUB -W 00:15;#BSUB -o "./out_files/omp/2.out";#BSUB -e "./err_files/omp/2.err";#BSUB -R "span[hosts=1]";OMP_NUM_THREADS=2 ./2mm_omp> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-sqi21-01> in cluster <MSUCluster> at Tue Dec 14 23:34:53 2021
+Job <#BSUB -n 1;#BSUB -W 00:15;#BSUB -o "./out_files/omp/1.out";#BSUB -e "./err_files/omp/1.err";#BSUB -R "span[hosts=1]";OMP_NUM_THREADS=1 ./2mm_omp> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-sqi21-01> in cluster <MSUCluster> at Tue Dec 14 23:34:53 2021
 Job was executed on host(s) <polus-c1-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-sqi21-01> in cluster <MSUCluster> at Tue Dec 14 23:34:54 2021
 </home_edu/edu-cmc-sqi21/edu-cmc-sqi21-01> was used as the home directory.
 </home_edu/edu-cmc-sqi21/edu-cmc-sqi21-01/skipod/skipod_git/2mm> was used as the working directory.
 Started at Tue Dec 14 23:34:54 2021
-Terminated at Tue Dec 14 23:35:05 2021
-Results reported at Tue Dec 14 23:35:05 2021
+Terminated at Tue Dec 14 23:35:12 2021
+Results reported at Tue Dec 14 23:35:12 2021
 
 Your job looked like:
 
@@ -162,10 +162,10 @@ Your job looked like:
 # LSBATCH: User input
 #BSUB -n 1
 #BSUB -W 00:15
-#BSUB -o "./out_files/omp/2.out"
-#BSUB -e "./err_files/omp/2.err"
+#BSUB -o "./out_files/omp/1.out"
+#BSUB -e "./err_files/omp/1.err"
 #BSUB -R "span[hosts=1]"
-OMP_NUM_THREADS=2 ./2mm_omp
+OMP_NUM_THREADS=1 ./2mm_omp
 
 ------------------------------------------------------------
 
@@ -173,37 +173,37 @@ Successfully completed.
 
 Resource usage summary:
 
-    CPU time :                                   18.82 sec.
+    CPU time :                                   17.71 sec.
     Max Memory :                                 23 MB
     Average Memory :                             17.50 MB
     Total Requested Memory :                     -
     Delta Memory :                               -
     Max Swap :                                   -
     Max Processes :                              4
-    Max Threads :                                6
-    Run time :                                   16 sec.
-    Turnaround time :                            12 sec.
+    Max Threads :                                5
+    Run time :                                   24 sec.
+    Turnaround time :                            19 sec.
 
 The output (if any) follows:
 
-Nthread = 2
-Time in seconds = 9.522105
+Nthread = 1
+Time in seconds = 17.640753
 
 
 PS:
 
-Read file <./err_files/omp/2.err> for stderr output of this job.
+Read file <./err_files/omp/1.err> for stderr output of this job.
 
 Sender: LSF System <lsfadmin@polus-c4-ib.bmc.hpc.cs.msu.ru>
-Subject: Job 839606: <#BSUB -n 1;#BSUB -W 00:15;#BSUB -o "./out_files/omp/2.out";#BSUB -e "./err_files/omp/2.err";#BSUB -R "span[hosts=1]";OMP_NUM_THREADS=2 ./2mm_omp> in cluster <MSUCluster> Done
+Subject: Job 839605: <#BSUB -n 1;#BSUB -W 00:15;#BSUB -o "./out_files/omp/1.out";#BSUB -e "./err_files/omp/1.err";#BSUB -R "span[hosts=1]";OMP_NUM_THREADS=1 ./2mm_omp> in cluster <MSUCluster> Done
 
-Job <#BSUB -n 1;#BSUB -W 00:15;#BSUB -o "./out_files/omp/2.out";#BSUB -e "./err_files/omp/2.err";#BSUB -R "span[hosts=1]";OMP_NUM_THREADS=2 ./2mm_omp> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-sqi21-01> in cluster <MSUCluster> at Tue Dec 14 23:39:53 2021
+Job <#BSUB -n 1;#BSUB -W 00:15;#BSUB -o "./out_files/omp/1.out";#BSUB -e "./err_files/omp/1.err";#BSUB -R "span[hosts=1]";OMP_NUM_THREADS=1 ./2mm_omp> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-sqi21-01> in cluster <MSUCluster> at Tue Dec 14 23:39:53 2021
 Job was executed on host(s) <polus-c4-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-sqi21-01> in cluster <MSUCluster> at Tue Dec 14 23:39:54 2021
 </home_edu/edu-cmc-sqi21/edu-cmc-sqi21-01> was used as the home directory.
 </home_edu/edu-cmc-sqi21/edu-cmc-sqi21-01/skipod/skipod_git/2mm> was used as the working directory.
 Started at Tue Dec 14 23:39:54 2021
-Terminated at Tue Dec 14 23:41:13 2021
-Results reported at Tue Dec 14 23:41:13 2021
+Terminated at Tue Dec 14 23:42:37 2021
+Results reported at Tue Dec 14 23:42:37 2021
 
 Your job looked like:
 
@@ -211,10 +211,10 @@ Your job looked like:
 # LSBATCH: User input
 #BSUB -n 1
 #BSUB -W 00:15
-#BSUB -o "./out_files/omp/2.out"
-#BSUB -e "./err_files/omp/2.err"
+#BSUB -o "./out_files/omp/1.out"
+#BSUB -e "./err_files/omp/1.err"
 #BSUB -R "span[hosts=1]"
-OMP_NUM_THREADS=2 ./2mm_omp
+OMP_NUM_THREADS=1 ./2mm_omp
 
 ------------------------------------------------------------
 
@@ -222,24 +222,24 @@ Successfully completed.
 
 Resource usage summary:
 
-    CPU time :                                   152.19 sec.
+    CPU time :                                   161.51 sec.
     Max Memory :                                 76 MB
-    Average Memory :                             70.64 MB
+    Average Memory :                             72.87 MB
     Total Requested Memory :                     -
     Delta Memory :                               -
     Max Swap :                                   -
     Max Processes :                              4
-    Max Threads :                                6
-    Run time :                                   79 sec.
-    Turnaround time :                            80 sec.
+    Max Threads :                                5
+    Run time :                                   162 sec.
+    Turnaround time :                            164 sec.
 
 The output (if any) follows:
 
-Nthread = 2
-Time in seconds = 77.690207
+Nthread = 1
+Time in seconds = 161.230001
 
 
 PS:
 
-Read file <./err_files/omp/2.err> for stderr output of this job.
+Read file <./err_files/omp/1.err> for stderr output of this job.
 
