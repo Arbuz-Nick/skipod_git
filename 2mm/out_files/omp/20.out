@@ -1,13 +1,13 @@
-Sender: LSF System <lsfadmin@polus-c3-ib.bmc.hpc.cs.msu.ru>
-Subject: Job 837782: <#BSUB -n 3;#BSUB -W 00:15;#BSUB -o "./out_files/omp/20.out";#BSUB -e "./err_files/omp/20.err";#BSUB -R "span[hosts=1]";OMP_NUM_THREADS=20 ./2mm_omp> in cluster <MSUCluster> Done
+Sender: LSF System <lsfadmin@polus-c1-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 839268: <#BSUB -n 3;#BSUB -W 00:15;#BSUB -o "./out_files/omp/20.out";#BSUB -e "./err_files/omp/20.err";#BSUB -R "span[hosts=1]";OMP_NUM_THREADS=20 ./2mm_omp> in cluster <MSUCluster> Done
 
-Job <#BSUB -n 3;#BSUB -W 00:15;#BSUB -o "./out_files/omp/20.out";#BSUB -e "./err_files/omp/20.err";#BSUB -R "span[hosts=1]";OMP_NUM_THREADS=20 ./2mm_omp> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-sqi21-01> in cluster <MSUCluster> at Tue Dec 14 01:34:41 2021
-Job was executed on host(s) <3*polus-c3-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-sqi21-01> in cluster <MSUCluster> at Tue Dec 14 01:34:56 2021
+Job <#BSUB -n 3;#BSUB -W 00:15;#BSUB -o "./out_files/omp/20.out";#BSUB -e "./err_files/omp/20.err";#BSUB -R "span[hosts=1]";OMP_NUM_THREADS=20 ./2mm_omp> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-sqi21-01> in cluster <MSUCluster> at Tue Dec 14 22:56:14 2021
+Job was executed on host(s) <3*polus-c1-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-sqi21-01> in cluster <MSUCluster> at Tue Dec 14 22:56:30 2021
 </home_edu/edu-cmc-sqi21/edu-cmc-sqi21-01> was used as the home directory.
-</home_edu/edu-cmc-sqi21/edu-cmc-sqi21-01/skipod/skipod_polus/2mm> was used as the working directory.
-Started at Tue Dec 14 01:34:56 2021
-Terminated at Tue Dec 14 01:35:02 2021
-Results reported at Tue Dec 14 01:35:02 2021
+</home_edu/edu-cmc-sqi21/edu-cmc-sqi21-01/skipod/skipod_git/2mm> was used as the working directory.
+Started at Tue Dec 14 22:56:30 2021
+Terminated at Tue Dec 14 22:56:35 2021
+Results reported at Tue Dec 14 22:56:35 2021
 
 Your job looked like:
 
@@ -26,21 +26,21 @@ Successfully completed.
 
 Resource usage summary:
 
-    CPU time :                                   75.80 sec.
+    CPU time :                                   55.61 sec.
     Max Memory :                                 24 MB
-    Average Memory :                             17.33 MB
+    Average Memory :                             16.33 MB
     Total Requested Memory :                     -
     Delta Memory :                               -
     Max Swap :                                   -
     Max Processes :                              4
     Max Threads :                                24
-    Run time :                                   7 sec.
+    Run time :                                   4 sec.
     Turnaround time :                            21 sec.
 
 The output (if any) follows:
 
 Nthread = 20
-Time in seconds = 4.600712
+Time in seconds = 3.745295
 
 
 PS:
