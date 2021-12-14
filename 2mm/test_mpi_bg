@@ -1,0 +1,9 @@
+#! /bin/bash
+#echo "Time;Nthreads">result_mpi_bg.csv
+rm -rf ./out_files/mpi/bg/*.out
+rm -rf ./err_files/mpi/bg/*.err
+for (( i = 1; i <= 1024; i*=2 ))
+do
+mpisubmit.bg -n $i --stdout ./out_files/mpi/bg/01.$i.out --stderr ./err_files/mpi/bg/01.$i.err ./2mm_mpi -- "./result_mpi_bg.csv"
+
+done

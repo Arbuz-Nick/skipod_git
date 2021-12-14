@@ -1,0 +1,149 @@
+Start_pogramStart_pogramStart_pogramStart_pogramStart_pogramStart_pogramStart_pogramStart_pogramStart_pogramStart_pogramStart_pogramStart_pogramStart_pogramStart_pogramStart_pogramStart_pogram
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Make memory placeMake memory place
+
+Make memory placeMake memory placeMake memory placeMake memory place
+Make memory placeMake memory place
+
+Make memory place
+Make memory placeMake memory placeMake memory place
+
+Make memory placeMake memory placeMake memory placeMake memory place
+
+
+
+
+
+
+
+Initialization complitedInitialization complited
+
+Initialization complited
+Initialization complitedInitialization complited
+
+Initialization complited
+Initialization complitedInitialization complited
+
+Initialization complitedInitialization complited
+Initialization complited
+Initialization complited
+Initialization complitedInitialization complited
+Initialization complitedInitialization complited
+
+
+
+Start parallel sectionStart parallel sectionStart parallel sectionStart parallel sectionStart parallel sectionStart parallel sectionStart parallel sectionStart parallel sectionStart parallel sectionStart parallel sectionStart parallel sectionStart parallel sectionStart parallel sectionStart parallel sectionStart parallel sectionStart parallel section
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Process 7: Before 1 for
+Process 3: Before 1 for
+Process 13: Before 1 for
+Process 9: Before 1 for
+Process 12: Before 1 for
+Process 8: Before 1 for
+Process 10: Before 1 for
+Process 14: Before 1 for
+Process 11: Before 1 for
+Process 15: Before 1 for
+Process 6: Before 1 for
+Process 2: Before 1 for
+Process 1: Before 1 for
+Process 5: Before 1 for
+Process 4: Before 1 for
+Process 0: Run timer
+Process 7: Before 2 for
+Process 3: Before 2 for
+Process 13: Before 2 for
+Process 9: Before 2 for
+Process 12: Before 2 for
+Process 8: Before 2 for
+Process 10: Before 2 for
+Process 14: Before 2 for
+Process 11: Before 2 for
+Process 15: Before 2 for
+Process 6: Before 2 for
+Process 2: Before 2 for
+Process 1: Before 2 for
+Process 5: Before 2 for
+Process 4: Before 2 for
+Nthread = 16
+Process 0: Before 1 for
+Process 0: Before 2 for
+Process 7: Before 3 for
+Process 8: Before 3 for
+Process 3: Before 3 for
+Process 9: Before 3 for
+Process 12: Before 3 for
+Process 13: Before 3 for
+Process 10: Before 3 for
+Process 15: Before 3 for
+Process 14: Before 3 for
+Process 11: Before 3 for
+Process 5: Before 3 for
+Process 6: Before 3 for
+Process 2: Before 3 for
+Process 1: Before 3 for
+Process 4: Before 3 for
+Process 7: Before 4 for
+Process 8: Before 4 for
+Process 3: Before 4 for
+Process 9: Before 4 for
+Process 12: Before 4 for
+Process 13: Before 4 for
+Process 10: Before 4 for
+Process 15: Before 4 for
+Process 14: Before 4 for
+Process 11: Before 4 for
+Process 6: Before 4 for
+Process 5: Before 4 for
+Process 2: Before 4 for
+Process 1: Before 4 for
+Process 4: Before 4 for
+Process 0: Before 3 for
+Process 0: Before 4 for
+Process 7::Reached the barrier
+Process 9::Reached the barrier
+Process 8::Reached the barrier
+Process 13::Reached the barrier
+Process 3::Reached the barrier
+Process 10::Reached the barrier
+Process 12::Reached the barrier
+Process 15::Reached the barrier
+Process 11::Reached the barrier
+Process 14::Reached the barrier
+Process 1::Reached the barrier
+Process 5::Reached the barrier
+Process 6::Reached the barrier
+Process 2::Reached the barrier
+Process 4::Reached the barrier
+Process 0: Timer stoped
+Time in seconds = 11.981004
+Process 0::Reached the barrier
+Process 0::Finish

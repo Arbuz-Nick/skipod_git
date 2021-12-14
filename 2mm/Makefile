@@ -1,8 +1,15 @@
+
+test_mpi_bg: mpi_bg test_mpi_bg
+	./test_mpi_bg
+
 test_mpi_polus: mpi_polus test_mpi_polus
 	./test_mpi_polus
 
 test_mpi: mpi test_mpi
 	./test_mpi
+
+mpi_bg: 2mm_mpi.c 2mm_mpi.h
+	mpicc ./2mm_mpi.c 2mm_mpi.h -o 2mm_mpi -std=c99
 
 mpi_polus: 2mm_mpi.c 2mm_mpi.h
 	mpicc ./2mm_mpi.c 2mm_mpi.h -o 2mm_mpi -std=c99

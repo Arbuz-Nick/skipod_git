@@ -4,8 +4,8 @@ echo "Time;Nthreads">result_mpi_polus.csv
 
 for (( j = 0; j < 10; j++ ))
 do
-for (( i = 1; i <= 64; i+=2 ))
+for (( i = 1; i <= 128; i+=2 ))
 do
-mpisubmit.pl -p $i --stdout ./out_files/mpi/$j.$i.out --stderr ./err_files/mpi/$j.$i.err ./2mm_mpi
+mpisubmit.pl -n $i --stdout ./out_files/mpi/$j.$i.out --stderr ./err_files/mpi/$j.$i.err ./2mm_mpi
 done
 done
