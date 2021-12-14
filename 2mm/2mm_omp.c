@@ -89,7 +89,7 @@ static void kernel_2mm(int ni,
       FILE* fout;
       fout = fopen(file_path, "a+");
       printf("Nthread = %d\n", nthreads);
-      fprintf(fout, "%d\n", nthreads);
+      fprintf(fout, "%d;%d*%d*%d*%d\n", nthreads, ni, nj, nk, nl);
     }
     int i, j, k;
     for (i = 0; i < ni; i++)
