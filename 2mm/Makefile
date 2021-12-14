@@ -24,19 +24,19 @@ test_omp: omp 2mm_omp
 	./test_omp
 
 omp_polus_mini: 2mm_omp.c 2mm_omp.h
-	gcc 2mm_omp.c -o 2mm_omp -Wall -fopenmp -DMINI_DATASET
+	gcc 2mm_omp.c -o 2mm_omp_xs -Wall -fopenmp -DMINI_DATASET
 
 omp_polus_small: 2mm_omp.c 2mm_omp.h
-	gcc 2mm_omp.c -o 2mm_omp -Wall -fopenmp -DSMALL_DATASET
+	gcc 2mm_omp.c -o 2mm_omp_s -Wall -fopenmp -DSMALL_DATASET
 
 omp_polus_medium: 2mm_omp.c 2mm_omp.h
-	gcc 2mm_omp.c -o 2mm_omp -Wall -fopenmp -DMEDIUM_DATASET
+	gcc 2mm_omp.c -o 2mm_omp_m -Wall -fopenmp -DMEDIUM_DATASET
 
 omp_polus_large: 2mm_omp.c 2mm_omp.h
-	gcc 2mm_omp.c -o 2mm_omp -Wall -fopenmp -DLARGE_DATASET
+	gcc 2mm_omp.c -o 2mm_omp_l -Wall -fopenmp -DLARGE_DATASET
 
 omp_polus_xlarge: 2mm_omp.c 2mm_omp.h
-	gcc 2mm_omp.c -o 2mm_omp -Wall -fopenmp -DEXTRALARGE_DATASET
+	gcc 2mm_omp.c -o 2mm_omp_xl -Wall -fopenmp -DEXTRALARGE_DATASET
 
 omp: 2mm_omp.c 2mm_omp.h
 	gcc 2mm_omp.c -o 2mm_omp -Wall -fopenmp

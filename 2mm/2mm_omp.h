@@ -1,6 +1,5 @@
 #ifndef _2MM_H
 #define _2MM_H 
-//#define MINI_DATASET 1
 # if !defined(MINI_DATASET) && !defined(SMALL_DATASET) && !defined(MEDIUM_DATASET) && !defined(LARGE_DATASET) && !defined(EXTRALARGE_DATASET)
 #define LARGE_DATASET
 # endif
