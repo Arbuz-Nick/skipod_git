@@ -1,0 +1,575 @@
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    opal_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-opal-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[polus-c2-ib.bmc.hpc.cs.msu.ru:99920] Local abort before MPI_INIT completed completed successfully, but am not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    orte_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-orte-runtime: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    mpi_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-mpi-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    opal_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-opal-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    orte_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-orte-runtime: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    mpi_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-mpi-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[polus-c4-ib.bmc.hpc.cs.msu.ru:100827] Local abort before MPI_INIT completed completed successfully, but am not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    opal_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-opal-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    orte_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-orte-runtime: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    mpi_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-mpi-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[polus-c4-ib.bmc.hpc.cs.msu.ru:100828] Local abort before MPI_INIT completed completed successfully, but am not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    opal_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-opal-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    orte_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-orte-runtime: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    mpi_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-mpi-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[polus-c4-ib.bmc.hpc.cs.msu.ru:100829] Local abort before MPI_INIT completed completed successfully, but am not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    opal_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-opal-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    orte_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-orte-runtime: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    mpi_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-mpi-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[polus-c4-ib.bmc.hpc.cs.msu.ru:100830] Local abort before MPI_INIT completed completed successfully, but am not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    opal_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-opal-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    orte_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-orte-runtime: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    mpi_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-mpi-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[polus-c4-ib.bmc.hpc.cs.msu.ru:100831] Local abort before MPI_INIT completed completed successfully, but am not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    opal_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-opal-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    orte_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-orte-runtime: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    mpi_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-mpi-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[polus-c4-ib.bmc.hpc.cs.msu.ru:100823] Local abort before MPI_INIT completed completed successfully, but am not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    opal_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-opal-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    orte_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-orte-runtime: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    mpi_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-mpi-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[polus-c4-ib.bmc.hpc.cs.msu.ru:100824] Local abort before MPI_INIT completed completed successfully, but am not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    opal_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-opal-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    orte_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-orte-runtime: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    mpi_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-mpi-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[polus-c4-ib.bmc.hpc.cs.msu.ru:100825] Local abort before MPI_INIT completed completed successfully, but am not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    opal_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-opal-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    orte_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-orte-runtime: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    mpi_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-mpi-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[polus-c4-ib.bmc.hpc.cs.msu.ru:100826] Local abort before MPI_INIT completed completed successfully, but am not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[polus-c4-ib.bmc.hpc.cs.msu.ru:100832] Local abort before MPI_INIT completed completed successfully, but am not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    opal_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-opal-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    orte_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-orte-runtime: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    mpi_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-mpi-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[polus-c3-ib.bmc.hpc.cs.msu.ru:41841] Local abort before MPI_INIT completed completed successfully, but am not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    opal_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-opal-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    orte_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-orte-runtime: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    mpi_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-mpi-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[polus-c3-ib.bmc.hpc.cs.msu.ru:41842] Local abort before MPI_INIT completed completed successfully, but am not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    opal_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-opal-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    orte_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-orte-runtime: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    mpi_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-mpi-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[polus-c3-ib.bmc.hpc.cs.msu.ru:41844] Local abort before MPI_INIT completed completed successfully, but am not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    opal_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-opal-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    orte_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-orte-runtime: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    mpi_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-mpi-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[polus-c3-ib.bmc.hpc.cs.msu.ru:41845] Local abort before MPI_INIT completed completed successfully, but am not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    opal_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-opal-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    orte_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-orte-runtime: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    mpi_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-mpi-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[polus-c3-ib.bmc.hpc.cs.msu.ru:41829] Local abort before MPI_INIT completed completed successfully, but am not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    opal_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-opal-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    orte_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-orte-runtime: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    mpi_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-mpi-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[polus-c3-ib.bmc.hpc.cs.msu.ru:41830] Local abort before MPI_INIT completed completed successfully, but am not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    opal_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-opal-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    orte_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-orte-runtime: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    mpi_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-mpi-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[polus-c3-ib.bmc.hpc.cs.msu.ru:41831] Local abort before MPI_INIT completed completed successfully, but am not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    opal_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-opal-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    orte_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-orte-runtime: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    mpi_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-mpi-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[polus-c3-ib.bmc.hpc.cs.msu.ru:41832] Local abort before MPI_INIT completed completed successfully, but am not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    opal_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-opal-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    orte_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-orte-runtime: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    mpi_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-mpi-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[polus-c3-ib.bmc.hpc.cs.msu.ru:41833] Local abort before MPI_INIT completed completed successfully, but am not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    opal_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-opal-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    orte_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-orte-runtime: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    mpi_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-mpi-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[polus-c3-ib.bmc.hpc.cs.msu.ru:41836] Local abort before MPI_INIT completed completed successfully, but am not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    opal_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-opal-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    orte_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-orte-runtime: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    mpi_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-mpi-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[polus-c3-ib.bmc.hpc.cs.msu.ru:41838] Local abort before MPI_INIT completed completed successfully, but am not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    opal_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-opal-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    orte_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-orte-runtime: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    mpi_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-mpi-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[polus-c3-ib.bmc.hpc.cs.msu.ru:41839] Local abort before MPI_INIT completed completed successfully, but am not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    opal_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-opal-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    orte_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-orte-runtime: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    mpi_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-mpi-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[polus-c3-ib.bmc.hpc.cs.msu.ru:41840] Local abort before MPI_INIT completed completed successfully, but am not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    opal_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-opal-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    orte_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-orte-runtime: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    mpi_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-mpi-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    opal_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-opal-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    orte_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-orte-runtime: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    mpi_init:startup:internal-failure
+But I couldn't open the help file:
+    /opt/ibm/spectrum_mpi/share/openmpi/help-mpi-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[polus-c3-ib.bmc.hpc.cs.msu.ru:41846] Local abort before MPI_INIT completed completed successfully, but am not able to aggregate error messages, and not able to guarantee that all other processes were killed!

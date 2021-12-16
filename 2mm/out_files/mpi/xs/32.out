@@ -1,0 +1,54 @@
+Sender: LSF System <lsfadmin@polus-c2-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 843890: <# this file was automaticly created by mpisubmit.pl script for edu-cmc-sqi21-01 #;source /polusfs/setenv/setup.SMPI;#BSUB -n 32;#BSUB -W 00:15;#BSUB -o ./out_files/mpi/xs/32.out;#BSUB -e ./err_files/mpi/xs/32.err;OMP_NUM_THREADS=1 mpiexec ./2mm_mpi_xs> in cluster <MSUCluster> Exited
+
+Job <# this file was automaticly created by mpisubmit.pl script for edu-cmc-sqi21-01 #;source /polusfs/setenv/setup.SMPI;#BSUB -n 32;#BSUB -W 00:15;#BSUB -o ./out_files/mpi/xs/32.out;#BSUB -e ./err_files/mpi/xs/32.err;OMP_NUM_THREADS=1 mpiexec ./2mm_mpi_xs> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-sqi21-01> in cluster <MSUCluster> at Fri Dec 17 00:52:03 2021
+Job was executed on host(s) <2*polus-c2-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-sqi21-01> in cluster <MSUCluster> at Fri Dec 17 00:52:07 2021
+                            <13*polus-c4-ib.bmc.hpc.cs.msu.ru>
+                            <17*polus-c3-ib.bmc.hpc.cs.msu.ru>
+</home_edu/edu-cmc-sqi21/edu-cmc-sqi21-01> was used as the home directory.
+</home_edu/edu-cmc-sqi21/edu-cmc-sqi21-01/skipod/skipod_git/2mm> was used as the working directory.
+Started at Fri Dec 17 00:52:07 2021
+Terminated at Fri Dec 17 00:52:09 2021
+Results reported at Fri Dec 17 00:52:09 2021
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+# this file was automaticly created by mpisubmit.pl script for edu-cmc-sqi21-01 #
+source /polusfs/setenv/setup.SMPI
+#BSUB -n 32
+#BSUB -W 00:15
+#BSUB -o ./out_files/mpi/xs/32.out
+#BSUB -e ./err_files/mpi/xs/32.err
+OMP_NUM_THREADS=1 mpiexec ./2mm_mpi_xs
+
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   0.68 sec.
+    Max Memory :                                 3 MB
+    Average Memory :                             2.33 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              1
+    Max Threads :                                2
+    Run time :                                   2 sec.
+    Turnaround time :                            6 sec.
+
+The output (if any) follows:
+
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+
+
+PS:
+
+Read file <./err_files/mpi/xs/32.err> for stderr output of this job.
+

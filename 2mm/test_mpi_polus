@@ -20,7 +20,7 @@ echo "Time;Nthreads;MatrixSize">result_mpi_polus.csv
 make mpi_polus_xs
 for (( i = 1; i <= 128; i*=2 ))
 do
-mpisubmit.pl -n $i --stdout ./out_files/mpi/xs/$i.out --stderr ./err_files/mpi/xs/$i.err ./2mm_mpi_xs
+mpisubmit.pl -p $i --stdout ./out_files/mpi/xs/$i.out --stderr ./err_files/mpi/xs/$i.err ./2mm_mpi_xs
 done
 
 wait 
@@ -28,7 +28,7 @@ wait
 make mpi_polus_s
 for (( i = 1; i <= 128; i*=2 ))
 do
-mpisubmit.pl -n $i --stdout ./out_files/mpi/s/$i.out --stderr ./err_files/mpi/s/$i.err ./2mm_mpi_s
+mpisubmit.pl -p $i --stdout ./out_files/mpi/s/$i.out --stderr ./err_files/mpi/s/$i.err ./2mm_mpi_s
 done
 
 wait 
@@ -36,7 +36,7 @@ wait
 make mpi_polus_m
 for (( i = 1; i <= 128; i*=2 ))
 do
-mpisubmit.pl -n $i --stdout ./out_files/mpi/m/$i.out --stderr ./err_files/mpi/m/$i.err ./2mm_mpi_m
+mpisubmit.pl -p $i --stdout ./out_files/mpi/m/$i.out --stderr ./err_files/mpi/m/$i.err ./2mm_mpi_m
 done
 
 wait 
@@ -44,7 +44,7 @@ wait
 make mpi_polus_l
 for (( i = 1; i <= 128; i*=2 ))
 do
-mpisubmit.pl -n $i --stdout ./out_files/mpi/l/$i.out --stderr ./err_files/mpi/l/$i.err ./2mm_mpi_l
+mpisubmit.pl -p $i --stdout ./out_files/mpi/l/$i.out --stderr ./err_files/mpi/l/$i.err ./2mm_mpi_l
 done
 
 wait 
@@ -52,5 +52,5 @@ wait
 make mpi_polus_xl
 for (( i = 1; i <= 128; i*=2 ))
 do
-mpisubmit.pl -n $i --stdout ./out_files/mpi/xl/$i.out --stderr ./err_files/mpi/xl/$i.err ./2mm_mpi_xl
+mpisubmit.pl -p $i --stdout ./out_files/mpi/xl/$i.out --stderr ./err_files/mpi/xl/$i.err ./2mm_mpi_xl
 done
