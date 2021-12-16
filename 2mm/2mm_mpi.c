@@ -26,7 +26,7 @@ void bench_timer_stop() {
 void bench_timer_print() {
   FILE* fout;
   fout = fopen(file_path, "a+");
-  fprintf(fout, "%0.6lf;", bench_t_end - bench_t_start);
+  fprintf(fout, "%0.6lf;%d;%d*%d*%d*%d\n", bench_t_end - bench_t_start, process_num, NI, NJ, NK, NL);
   printf("Time in seconds = %0.6lf\n", bench_t_end - bench_t_start);
 }
 
@@ -84,10 +84,7 @@ static void kernel_2mm(int ni,
                        float C[nj][nl],
                        float D[ni][nl]) {
   if (process_id == FIRST_THREAD) {
-    FILE* fout;
-    fout = fopen(file_path, "a+");
     printf("Nthread = %d\n", process_num);
-    fprintf(fout, "%d\n", process_num);
   }
   int i, j, k;
 

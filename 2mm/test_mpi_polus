@@ -15,7 +15,7 @@ rm -rf ./err_files/mpi/l/*.err
 rm -rf ./out_files/mpi/xl/*.out
 rm -rf ./err_files/mpi/xl/*.err
 
-echo "Time;Nthreads">result_mpi_polus.csv
+echo "Time;Nthreads;MatrixSize">result_mpi_polus.csv
 
 make mpi_polus_xs
 for (( i = 1; i <= 128; i*=2 ))

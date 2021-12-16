@@ -1,9 +1,32 @@
 #! /bin/bash
-echo "Time;Nthreads">result_mpi.csv
-for ((j = 0; j < 10; j++))
-do
+echo "Time;Nthreads;MatrixSize">result_mpi_pc.csv
+
+mpicc ./2mm_mpi.c ./2mm_mpi.h -o 2mm_mpi -DMINI_DATASET
 for ((i = 1; i <= 4; i++))
 do
-mpiexec -n $i ./2mm_mpi "./result_mpi.csv"
+mpiexec -n $i ./2mm_mpi "./result_mpi_pc.csv"
 done
+
+mpicc ./2mm_mpi.c ./2mm_mpi.h -o 2mm_mpi -DSMALL_DATASET
+for ((i = 1; i <= 4; i++))
+do
+mpiexec -n $i ./2mm_mpi "./result_mpi_pc.csv"
+done
+
+mpicc ./2mm_mpi.c ./2mm_mpi.h -o 2mm_mpi -DMEDIUM_DATASET
+for ((i = 1; i <= 4; i++))
+do
+mpiexec -n $i ./2mm_mpi "./result_mpi_pc.csv"
+done
+
+mpicc ./2mm_mpi.c ./2mm_mpi.h -o 2mm_mpi -DLARGE_DATASET
+for ((i = 1; i <= 4; i++))
+do
+mpiexec -n $i ./2mm_mpi "./result_mpi_pc.csv"
+done
+
+mpicc ./2mm_mpi.c ./2mm_mpi.h -o 2mm_mpi -DEXTRALARGE_DATASET
+for ((i = 1; i <= 4; i++))
+do
+mpiexec -n $i ./2mm_mpi "./result_mpi_pc.csv"
 done
