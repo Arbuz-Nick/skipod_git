@@ -11,19 +11,19 @@ test_mpi: test_mpi
 mpi_bg: 2mm_mpi.c 2mm_mpi.h
 	mpicc ./2mm_mpi.c 2mm_mpi.h -o 2mm_mpi -std=c99
 
-mpi_polus_xs: 2mm_mpi.c 2mm_mpi.h
+mpi_xs: 2mm_mpi.c 2mm_mpi.h
 	mpicc ./2mm_mpi.c 2mm_mpi.h -o 2mm_mpi_xs -std=c99 -DMINI_DATASET
 
-mpi_polus_s: 2mm_mpi.c 2mm_mpi.h
+mpi_s: 2mm_mpi.c 2mm_mpi.h
 	mpicc ./2mm_mpi.c 2mm_mpi.h -o 2mm_mpi_s -std=c99 -DSMALL_DATASET
 
-mpi_polus_m: 2mm_mpi.c 2mm_mpi.h
+mpi_m: 2mm_mpi.c 2mm_mpi.h
 	mpicc ./2mm_mpi.c 2mm_mpi.h -o 2mm_mpi_m -std=c99 -DMEDIUM_DATASET
 
-mpi_polus_l: 2mm_mpi.c 2mm_mpi.h
+mpi_l: 2mm_mpi.c 2mm_mpi.h
 	mpicc ./2mm_mpi.c 2mm_mpi.h -o 2mm_mpi_l -std=c99 -DLARGE_DATASET
 
-mpi_polus_xl: 2mm_mpi.c 2mm_mpi.h
+mpi_xl: 2mm_mpi.c 2mm_mpi.h
 	mpicc ./2mm_mpi.c 2mm_mpi.h -o 2mm_mpi_xl -std=c99 -DEXTRALARGE_DATASET
 
 mpi: 2mm_mpi.c 2mm_mpi.h
