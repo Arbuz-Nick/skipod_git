@@ -1,11 +1,30 @@
 #! /bin/bash
-rm -rf ./out_files/omp/*.out
-rm -rf ./err_files/omp/*.err
+rm -rf ./out_files/omp/xs/*.out
+rm -rf ./err_files/omp/xs/*.err
+
+rm -rf ./out_files/omp/s/*.out
+rm -rf ./err_files/omp/s/*.err
+
+rm -rf ./out_files/omp/m/*.out
+rm -rf ./err_files/omp/m/*.err
+
+rm -rf ./out_files/omp/l/*.out
+rm -rf ./err_files/omp/l/*.err
+
+rm -rf ./out_files/omp/xl/*.out
+rm -rf ./err_files/omp/xl/*.err
+
 echo "Time;Nthreads;MatrixSize">result_omp_polus.csv
 
 make omp_polus_mini
-for ((i = 1; i <= 128; i*=2))
+for ((j = 0; j <= 128; j+=2))
 do
+if [ $j -eq 0 ]
+then
+i=$(( 1 ))
+else
+i=$j
+fi
 bsub < ./lsf_files/xs/$i.lsf
 sleep 1
 done
@@ -13,32 +32,56 @@ done
 wait
 
 make omp_polus_small
-for ((i = 1; i <= 128; i*=2))
+for ((j = 0; j <= 128; j+=2))
 do
+if [ $j -eq 0 ]
+then
+i=$(( 1 ))
+else
+i=$j
+fi
 bsub < ./lsf_files/s/$i.lsf
 done
 
 wait
 
 make omp_polus_medium
-for ((i = 1; i <= 128; i*=2))
+for ((j = 0; j <= 128; j+=2))
 do
+if [ $j -eq 0 ]
+then
+i=$(( 1 ))
+else
+i=$j
+fi
 bsub < ./lsf_files/m/$i.lsf
 done
 
 wait
 
 make omp_polus_large
-for ((i = 1; i <= 128; i*=2))
+for ((j = 0; j <= 128; j+=2))
 do
+if [ $j -eq 0 ]
+then
+i=$(( 1 ))
+else
+i=$j
+fi
 bsub < ./lsf_files/l/$i.lsf
 done
 
 wait
 
 make omp_polus_xlarge
-for ((i = 1; i <= 128; i*=2))
+for ((j = 0; j <= 128; j+=2))
 do
+if [ $j -eq 0 ]
+then
+i=$(( 1 ))
+else
+i=$j
+fi
 bsub < ./lsf_files/xl/$i.lsf
 done
 

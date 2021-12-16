@@ -1,0 +1,17 @@
+
+#! /bin/bash
+rm -rf ./out_files/omp/xs/*.out
+rm -rf ./err_files/omp/xs/*.err
+echo "Time;Nthreads;MatrixSize">result_omp_polus.csv
+
+make omp_polus_mini
+for ((j = 0; j <= 128; j+=2))
+do
+if [ $j -eq 0 ]
+then
+i=$(( 1 ))
+else
+i=$j
+fi
+bsub < ./lsf_files/xs/$i.lsf
+done

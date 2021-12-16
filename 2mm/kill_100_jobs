@@ -1,0 +1,6 @@
+#! /bin/bash
+for ((i = 0; i < 100; i++))
+do
+bkill -u edu-cmc-sqi21-01
+sleep 4
+done

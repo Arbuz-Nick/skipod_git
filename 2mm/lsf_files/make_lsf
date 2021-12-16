@@ -1,6 +1,12 @@
 #!/bin/bash
-for ((i = 1; i <= 128; i*=2))
+for ((j = 0; j <= 128; j+=2))
 do
+if [ $j -eq 0 ]
+then 
+i=$(( 1 ))
+else 
+i=$j
+fi
 M=$(( (( $i / 8 )) + 1 ))
 echo "#BSUB -n $M
 #BSUB -W 00:15
@@ -10,8 +16,14 @@ echo "#BSUB -n $M
 OMP_NUM_THREADS=$i ./2mm_omp_xs">./xs/$i.lsf
 done
 
-for ((i = 1; i <= 128; i*=2))
+for ((j = 0; j <= 128; j+=2))
 do
+if [ $j -eq 0 ]
+then
+i=$(( 1 ))
+else
+i=$j
+fi
 M=$(( (( $i / 8 )) + 1 ))
 echo "#BSUB -n $M
 #BSUB -W 00:15
@@ -21,8 +33,14 @@ echo "#BSUB -n $M
 OMP_NUM_THREADS=$i ./2mm_omp_s">./s/$i.lsf
 done
 
-for ((i = 1; i <= 128; i*=2))
+for ((j = 0; j <= 128; j+=2))
 do
+if [ $j -eq 0 ]
+then
+i=$(( 1 ))
+else
+i=$j
+fi
 M=$(( (( $i / 8 )) + 1 ))
 echo "#BSUB -n $M
 #BSUB -W 00:15
@@ -32,8 +50,14 @@ echo "#BSUB -n $M
 OMP_NUM_THREADS=$i ./2mm_omp_m">./m/$i.lsf
 done
 
-for ((i = 1; i <= 128; i*=2))
+for ((j = 0; j <= 128; j+=2))
 do
+if [ $j -eq 0 ]
+then
+i=$(( 1 ))
+else
+i=$j
+fi
 M=$(( (( $i / 8 )) + 1 ))
 echo "#BSUB -n $M
 #BSUB -W 00:15
@@ -43,8 +67,14 @@ echo "#BSUB -n $M
 OMP_NUM_THREADS=$i ./2mm_omp_l">./l/$i.lsf
 done
 
-for ((i = 1; i <= 128; i*=2))
+for ((j = 0; j <= 128; j+=2))
 do
+if [ $j -eq 0 ]
+then
+i=$((1))
+else
+i=$j
+fi
 M=$(( (( $i / 8 )) + 1 ))
 echo "#BSUB -n $M
 #BSUB -W 00:15

@@ -1,0 +1,6 @@
+#BSUB -n 5
+#BSUB -W 00:15
+#BSUB -o "./out_files/omp/l/36.out"
+#BSUB -e "./err_files/omp/l/36.err"
+#BSUB -R "span[hosts=1]"
+OMP_NUM_THREADS=36 ./2mm_omp_l
