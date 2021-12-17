@@ -1,0 +1,7 @@
+<Dec 18 00:38:38.655960> BE_MPI (ERROR): Booting aborted - partition is in DEALLOCATING ('D') state
+<Dec 18 00:38:38.656050> BE_MPI (ERROR): Partition has not reached the READY ('I') state
+<Dec 18 00:38:38.665617> BE_MPI (ERROR): block error text 'bootBlock: boot failed for LL21121800382541 -- Check RAS and Control System logs for more information'
+<Dec 18 01:38:02.376310> FE_MPI (ERROR): backend failed while preparing partition with return code 37
+<Dec 18 01:38:02.376478> FE_MPI (ERROR):  - Failed to boot the partition
+<Dec 18 01:38:02.702499> FE_MPI (ERROR): Failure list:
+<Dec 18 01:38:02.702544> FE_MPI (ERROR):   - 1. Failed to boot the partition (failure #37)
