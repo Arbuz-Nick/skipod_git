@@ -17,14 +17,8 @@ rm -rf ./err_files/omp/xl/*.err
 echo "Time;Nthreads;MatrixSize">result_omp_polus.csv
 
 make omp_polus_mini
-for ((j = 0; j <= 128; j+=2))
+for ((i = 1; i <= 128; i*=2))
 do
-if [ $j -eq 0 ]
-then
-i=$(( 1 ))
-else
-i=$j
-fi
 bsub < ./lsf_files/xs/$i.lsf
 sleep 1
 done
@@ -32,58 +26,31 @@ done
 wait
 
 make omp_polus_small
-for ((j = 0; j <= 128; j+=2))
+for ((i = 1; i <= 128; i*=2))
 do
-if [ $j -eq 0 ]
-then
-i=$(( 1 ))
-else
-i=$j
-fi
 bsub < ./lsf_files/s/$i.lsf
 done
 
 wait
 
 make omp_polus_medium
-for ((j = 0; j <= 128; j+=2))
+for ((i = 1; i <= 128; i*=2))
 do
-if [ $j -eq 0 ]
-then
-i=$(( 1 ))
-else
-i=$j
-fi
 bsub < ./lsf_files/m/$i.lsf
 done
 
 wait
 
 make omp_polus_large
-for ((j = 0; j <= 128; j+=2))
+for ((i = 1; i <= 128; i*=2))
 do
-if [ $j -eq 0 ]
-then
-i=$(( 1 ))
-else
-i=$j
-fi
 bsub < ./lsf_files/l/$i.lsf
 done
 
 wait
 
 make omp_polus_xlarge
-for ((j = 0; j <= 128; j+=2))
+for ((i = 1; i <= 128; i*=2))
 do
-if [ $j -eq 0 ]
-then
-i=$(( 1 ))
-else
-i=$j
-fi
 bsub < ./lsf_files/xl/$i.lsf
 done
-
-
-
