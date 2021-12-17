@@ -1,13 +1,13 @@
-Sender: LSF System <lsfadmin@polus-c1-ib.bmc.hpc.cs.msu.ru>
-Subject: Job 839864: <#BSUB -n 17;#BSUB -W 00:15;#BSUB -o "./out_files/omp/s/128.out";#BSUB -e "./err_files/omp/s/128.err";#BSUB -R "span[hosts=1]";OMP_NUM_THREADS=128 ./2mm_omp_s> in cluster <MSUCluster> Done
+Sender: LSF System <lsfadmin@polus-c3-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 846150: <#BSUB -n 17;#BSUB -W 00:15;#BSUB -o "./out_files/omp/s/128.out";#BSUB -e "./err_files/omp/s/128.err";#BSUB -R "span[hosts=1]";OMP_NUM_THREADS=128 ./2mm_omp_s> in cluster <MSUCluster> Done
 
-Job <#BSUB -n 17;#BSUB -W 00:15;#BSUB -o "./out_files/omp/s/128.out";#BSUB -e "./err_files/omp/s/128.err";#BSUB -R "span[hosts=1]";OMP_NUM_THREADS=128 ./2mm_omp_s> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-sqi21-01> in cluster <MSUCluster> at Wed Dec 15 00:53:21 2021
-Job was executed on host(s) <17*polus-c1-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-sqi21-01> in cluster <MSUCluster> at Wed Dec 15 00:55:02 2021
+Job <#BSUB -n 17;#BSUB -W 00:15;#BSUB -o "./out_files/omp/s/128.out";#BSUB -e "./err_files/omp/s/128.err";#BSUB -R "span[hosts=1]";OMP_NUM_THREADS=128 ./2mm_omp_s> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-sqi21-01> in cluster <MSUCluster> at Fri Dec 17 21:09:24 2021
+Job was executed on host(s) <17*polus-c3-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-sqi21-01> in cluster <MSUCluster> at Fri Dec 17 21:10:33 2021
 </home_edu/edu-cmc-sqi21/edu-cmc-sqi21-01> was used as the home directory.
 </home_edu/edu-cmc-sqi21/edu-cmc-sqi21-01/skipod/skipod_git/2mm> was used as the working directory.
-Started at Wed Dec 15 00:55:02 2021
-Terminated at Wed Dec 15 00:55:03 2021
-Results reported at Wed Dec 15 00:55:03 2021
+Started at Fri Dec 17 21:10:33 2021
+Terminated at Fri Dec 17 21:10:35 2021
+Results reported at Fri Dec 17 21:10:35 2021
 
 Your job looked like:
 
@@ -26,7 +26,7 @@ Successfully completed.
 
 Resource usage summary:
 
-    CPU time :                                   0.80 sec.
+    CPU time :                                   0.87 sec.
     Max Memory :                                 1 MB
     Average Memory :                             1.00 MB
     Total Requested Memory :                     -
@@ -34,62 +34,13 @@ Resource usage summary:
     Max Swap :                                   -
     Max Processes :                              1
     Max Threads :                                1
-    Run time :                                   0 sec.
-    Turnaround time :                            102 sec.
+    Run time :                                   2 sec.
+    Turnaround time :                            71 sec.
 
 The output (if any) follows:
 
 Nthread = 128
-Time in seconds = 0.011537
-
-
-PS:
-
-Read file <./err_files/omp/s/128.err> for stderr output of this job.
-
-Sender: LSF System <lsfadmin@polus-c4-ib.bmc.hpc.cs.msu.ru>
-Subject: Job 839908: <#BSUB -n 17;#BSUB -W 00:15;#BSUB -o "./out_files/omp/s/128.out";#BSUB -e "./err_files/omp/s/128.err";#BSUB -R "span[hosts=1]";OMP_NUM_THREADS=128 ./2mm_omp_s> in cluster <MSUCluster> Done
-
-Job <#BSUB -n 17;#BSUB -W 00:15;#BSUB -o "./out_files/omp/s/128.out";#BSUB -e "./err_files/omp/s/128.err";#BSUB -R "span[hosts=1]";OMP_NUM_THREADS=128 ./2mm_omp_s> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-sqi21-01> in cluster <MSUCluster> at Wed Dec 15 00:56:06 2021
-Job was executed on host(s) <17*polus-c4-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-sqi21-01> in cluster <MSUCluster> at Wed Dec 15 00:57:23 2021
-</home_edu/edu-cmc-sqi21/edu-cmc-sqi21-01> was used as the home directory.
-</home_edu/edu-cmc-sqi21/edu-cmc-sqi21-01/skipod/skipod_git/2mm> was used as the working directory.
-Started at Wed Dec 15 00:57:23 2021
-Terminated at Wed Dec 15 00:57:24 2021
-Results reported at Wed Dec 15 00:57:24 2021
-
-Your job looked like:
-
-------------------------------------------------------------
-# LSBATCH: User input
-#BSUB -n 17
-#BSUB -W 00:15
-#BSUB -o "./out_files/omp/s/128.out"
-#BSUB -e "./err_files/omp/s/128.err"
-#BSUB -R "span[hosts=1]"
-OMP_NUM_THREADS=128 ./2mm_omp_s
-
-------------------------------------------------------------
-
-Successfully completed.
-
-Resource usage summary:
-
-    CPU time :                                   0.86 sec.
-    Max Memory :                                 4 MB
-    Average Memory :                             2.00 MB
-    Total Requested Memory :                     -
-    Delta Memory :                               -
-    Max Swap :                                   -
-    Max Processes :                              1
-    Max Threads :                                1
-    Run time :                                   0 sec.
-    Turnaround time :                            78 sec.
-
-The output (if any) follows:
-
-Nthread = 128
-Time in seconds = 0.011000
+Time in seconds = 0.011636
 
 
 PS:
